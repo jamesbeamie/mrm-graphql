@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AddResource Component renders properly 1`] = `
+<MockedProvider
+  addTypename={true}
+>
+  <AddResource
+    addResourceMutation={[MockFunction]}
+    data={
+      Object {
+        "allRooms": Object {
+          "rooms": Array [],
+        },
+      }
+    }
+    refetch={[MockFunction]}
+    userLocation={
+      Object {
+        "location": "Nairobi",
+      }
+    }
+  />
+</MockedProvider>
+`;

@@ -1,0 +1,99 @@
+@import './variables';
+@import '../../utils/images/images';
+
+.check-in {
+  flex: 2;
+
+  p {
+    font-size: 0.938em;
+    color: $color-text;
+  }
+
+  h2,
+  p {
+    margin: 0;
+  }
+}
+
+.checkin-time {
+  align-self: center;
+  padding-right: 3.125em;
+}
+
+.time-picker {
+  padding-top: 5px;
+  span {
+    color: $color-primary !important;
+  }
+
+  &:after {
+    content: url($caret-blue);
+    height: 18px;
+    width: 18px;
+    margin-left: 7px;
+  }
+}
+
+.time-picker-dropdown {
+  button {
+    width: 160px;
+    border-radius: 2px;
+    background-color: map-get($color-white, 000);
+  }
+  .theme--toggle--hC5Z2BVI {
+    width: 130px;
+    height: 37px;
+    background-color: map-get($color-white, 000);
+  }
+
+  .theme--menu--1gvr5Gvn {
+    top: 50px;
+    left: -10px;
+  }
+  .theme--button--2AgdxWh4 {
+    width: 128px;
+  }
+
+  .radio-wrapper {
+    display: block;
+    position: relative;
+    top: 0;
+  }
+  .theme--field--36UDgxsw {
+    height: 30px;
+    width: 158px;
+    margin-bottom: 5px;
+    position: relative;
+    margin: 2px 0 2px 12px;
+    vertical-align: bottom;
+    padding: 8px 0 11px 0;
+  }
+  .theme--field--36UDgxsw:hover {
+    background-color: map-get($color-white, 200);
+    cursor: pointer;
+  }
+
+  .theme--radio--1vWJb3Li {
+    border: 1px solid map-get($color-black, 100);
+    border-radius: 50%;
+    cursor: pointer;
+    display: inline-block;
+    height: 13.3px;
+    position: relative;
+    vertical-align: -6px;
+    width: 13.3px;
+    font-family: $font, Helvetica, Arial, sans-serif;
+    left: 130px;
+  }
+
+  .theme--text--3guDD8Pz {
+    height: 21px;
+    width: 74px;
+    color: $color-primary;
+    font-size: 16px;
+    line-height: 21px;
+    font-size: 14px;
+    line-height: 20px;
+    vertical-align: -6px;
+  }
+}

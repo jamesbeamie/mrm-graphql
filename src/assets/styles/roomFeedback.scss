@@ -1,0 +1,46 @@
+@import './variables';
+
+.room-feedback {
+  &__control {
+    height: 70px;
+    text-align: right;
+    margin-top: 4%;
+    margin-bottom: 4%;
+  }
+
+  button {
+    border: 1px solid $color-primary;
+    border-radius: 2px;
+    font-size: 16px;
+    color: $color-primary;
+    margin-left: 0;
+    background-color: map-get($color-white, 000);
+    padding: 0 !important;
+    height: auto !important;
+
+    @media screen and (max-width: 425px) {
+      font-size: 1.05em;
+    }
+  }
+
+  &__list {
+    .table {
+      &__row {
+        grid-template-columns: 40% 10% 10% 10% 10% 10% 10% !important;
+        span {
+          display: flex;
+        }
+      }
+
+      &__headers {
+        grid-template-columns: 40% 10% 10% 10% 10% 10% 10% !important;
+      }
+    }
+  }
+}
+
+.questions {
+  padding: 2%;
+  color: $color-primary;
+  text-decoration: none;
+}

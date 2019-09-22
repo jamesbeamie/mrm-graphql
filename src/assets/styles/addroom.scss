@@ -1,0 +1,89 @@
+@import "./variables";
+
+.add-room-modal {
+  font-family: $font-light;
+  padding: 3%;
+  padding-right: 0;
+  border: none !important;
+
+  h2 {
+    margin-left: 0;
+    margin-top: 0;
+    margin-bottom: 40px !important;
+  }
+  .wing-wrapper {
+    margin-top: 5%;
+    margin-bottom: 4%;
+    width: 16em !important;
+  }
+
+  .mrm-input {
+    width: 28em;
+    margin-top: 0.7em;
+    margin-bottom: 0.7em;
+  }
+
+  .epic-tower-form {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    max-width: 34.5rem;
+    box-sizing: border-box;
+    padding-right: 2% !important;
+
+    .form-action-buttons {
+      padding-right: 33px;
+      button {
+        line-height: none;
+      }
+    }
+    .epic-tower-inputs {
+      display: flex;
+      flex-wrap: wrap;
+      padding-right: 4%;
+      margin-bottom: 10px;
+
+      #roomCapacity {
+        width: 185px !important;
+        height: 1.5rem;
+      }
+
+      .capacity-wrapper {
+        margin-top: 5.5%;
+      }
+
+      .capacity-label {
+        margin-left: 3%;
+      }
+      .wing-label {
+        margin-left: 7%;
+        width: 14em !important;
+      }
+      .floor-label {
+        margin-bottom: 4%;
+        width: 14em !important;
+      }
+      .epic-tower-input {
+        width: 14rem;
+      }
+      input[type="number"] {
+        width: 12rem;
+      }
+      .room-select-wrapper {
+        margin-top: 5%;
+        margin-bottom: 4%;
+        width: 32.3rem !important;
+      }
+    }
+  }
+}
+
+.capacity-label {
+  margin-left: 8%;
+
+  .controls {
+    .control {
+      padding: 0;
+    }
+  }
+}

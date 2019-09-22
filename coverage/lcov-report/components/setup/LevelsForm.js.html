@@ -1,0 +1,893 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for components/setup/LevelsForm.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../prettify.css" />
+    <link rel="stylesheet" href="../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../index.html">All files</a> / <a href="index.html">components/setup</a> LevelsForm.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>69/69</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>82/82</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>18/18</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>68/68</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line high'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153
+154
+155
+156
+157
+158
+159
+160
+161
+162
+163
+164
+165
+166
+167
+168
+169
+170
+171
+172
+173
+174
+175
+176
+177
+178
+179
+180
+181
+182
+183
+184
+185
+186
+187
+188
+189
+190
+191
+192
+193
+194
+195
+196
+197
+198
+199
+200
+201
+202
+203
+204
+205
+206
+207
+208
+209
+210
+211
+212
+213
+214
+215
+216
+217
+218
+219
+220
+221
+222
+223
+224
+225
+226
+227
+228
+229
+230
+231
+232
+233
+234
+235
+236
+237
+238
+239
+240
+241
+242
+243
+244
+245
+246
+247
+248
+249
+250
+251
+252
+253
+254
+255
+256
+257
+258
+259
+260
+261
+262
+263
+264
+265
+266
+267
+268
+269
+270
+271
+272
+273
+274
+275
+276
+277</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">10x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">16x</span>
+<span class="cline-any cline-yes">16x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">16x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">15x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">15x</span>
+<span class="cline-any cline-yes">15x</span>
+<span class="cline-any cline-yes">15x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">15x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">15x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">20x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">38x</span>
+<span class="cline-any cline-yes">38x</span>
+<span class="cline-any cline-yes">38x</span>
+<span class="cline-any cline-yes">38x</span>
+<span class="cline-any cline-yes">20x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">7x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">64x</span>
+<span class="cline-any cline-yes">64x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">64x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">38x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">38x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">64x</span>
+<span class="cline-any cline-yes">64x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">64x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">/* eslint-disable */
+import React, { Component } from 'react';
+import uuid from 'uuid';
+import { Input } from '../commons';
+import Button from '../commons/Button';
+import Controls from '../helpers/Controls';
+&nbsp;
+class LevelsForm extends Component {
+  state = {
+    levelCounter: 1,
+    levelsDetails: [],
+  };
+&nbsp;
+  componentWillReceiveProps(prevProps) {
+    this.props.activeLevel !== prevProps.activeLevel &amp;&amp;
+      this.setState({ levelCounter: prevProps.activeLevel });
+  }
+&nbsp;
+  populateLevelDetails = (val, type, index) =&gt; {
+    const { levelCounter, levelsDetails } = this.state;
+    const { tag, quantity, id, children } = levelsDetails[levelCounter - 1] || {};
+&nbsp;
+    return {
+      children: type === 'levelName' ? this.updateChildArray(index, val) : children || [],
+      id: id || uuid(),
+      level: levelCounter,
+      parentId: levelCounter == 1 ? null : '',
+      parentTitle: '',
+      tag: type === 'levelTagName' ? val : tag || '',
+      quantity: type === 'up' ? (val += 1) : type === 'down' &amp;&amp; val !== 0 ? (val -= 1) : quantity,
+      errorInput: null,
+    };
+  };
+&nbsp;
+  updateChildArray = (index, val) =&gt; {
+    const { levelCounter, levelsDetails } = this.state;
+    const { children } = levelsDetails[levelCounter - 1] || /* istanbul ignore next */ {};
+    let detailsPosition = children;
+&nbsp;
+    const updateObj = () =&gt; {
+      const arr = detailsPosition;
+      arr[index - 1] = {
+        name: val,
+        structureId: detailsPosition[index - 1].structureId,
+        parentId: '',
+        parentTitle: '',
+        level: levelCounter,
+      };
+      return (detailsPosition = arr);
+    };
+&nbsp;
+    return !detailsPosition.length
+      ? (detailsPosition[index - 1] = [
+          {
+            name: val,
+            structureId: (detailsPosition &amp;&amp; detailsPosition.structureId) || uuid(),
+            parentId: '',
+            parentTitle: '',
+            level: levelCounter,
+          },
+        ])
+      : children.length &gt;= index
+        ? updateObj() // modify existing entry
+        : /* istanbul ignore next */ [
+            ...detailsPosition,
+            {
+              name: val,
+              structureId: uuid(),
+              parentId: '',
+              parentTitle: '',
+              level: levelCounter,
+            },
+          ]; // new entry
+  };
+&nbsp;
+  /**
+   * It cancels the current level setup
+   *
+   * @param {object} event
+   *
+   * @returns {void}
+   */
+  cancelCurrentLevelSetup = (events)=&gt;{
+    const{cancelCurrentLevelSetup} = this.props;
+    const {levelCounter} = this.state;
+    /* istanbul ignore else */
+    if(levelCounter&gt;1){
+      events.preventDefault();
+      cancelCurrentLevelSetup()
+    }
+  }
+&nbsp;
+  /**
+   * It cancels the current level setup
+   *
+   * @param {int} highestLevel
+   *
+   * @returns {void}
+   */
+&nbsp;
+  updateErrorState = highestLevel =&gt; {
+    const { levelsDetails } = this.state;
+    const { tag, quantity, children } = levelsDetails[highestLevel - 1];
+    const errorState = levelsDetails;
+    const position = highestLevel - 1;
+    let errorArray = levelsDetails.errorInput;
+&nbsp;
+    if (!tag) {
+      errorState[position].input = (errorArray &amp;&amp; /* istanbul ignore next */ [...errorArray, 'tag']) || ['tag'];
+    } else if (!quantity) {
+      errorState[position].input = (errorArray &amp;&amp; /* istanbul ignore next */ [...errorArray, 'quantity']) || ['quantity'];
+    } else if (children.length &lt; quantity) {
+      errorState[position].input = (errorArray &amp;&amp; /* istanbul ignore next */ [...errorArray, quantity]) || [quantity];
+    }
+&nbsp;
+    this.setState({
+      levelsDetails: errorState,
+    });
+  };
+&nbsp;
+  handleInputChange = event =&gt; {
+    event.preventDefault();
+&nbsp;
+    const { levelCounter } = this.state;
+    const { name, value, id } = event.target;
+    const arr = this.state.levelsDetails;
+&nbsp;
+    arr[levelCounter - 1] = ['up', 'down'].includes(name)
+      ? this.populateLevelDetails(
+          (arr[levelCounter - 1] &amp;&amp; arr[levelCounter - 1].quantity) || 0,
+          name,
+        )
+      : this.populateLevelDetails(value, name, id);
+&nbsp;
+    this.setState({
+      levelsDetails: arr,
+      errorInput: null,
+    });
+  };
+&nbsp;
+  removeLevelDetails = levelData =&gt; {
+    const { level, structureId } = levelData;
+    const { levelsDetails } = this.state;
+    let arr = levelsDetails;
+    const position = level - 1;
+&nbsp;
+    if (arr[position].quantity === 1) {
+      arr.splice(position, 1);
+    } else {
+      const newArr = arr[position].children.filter(child =&gt; child.structureId !== structureId);
+      arr[position].children = newArr;
+      arr[position].quantity -= 1;
+    }
+    this.setState({
+      levelsDetails: arr,
+    });
+    this.props.updateCounter(arr.length);
+  };
+&nbsp;
+  toggleParentSelection = (parent, childPosition, type) =&gt; () =&gt; {
+    const { levelCounter, levelsDetails } = this.state;
+    const { name, structureId } = parent;
+    const levels = levelsDetails;
+&nbsp;
+    levels[levelCounter - 1].children[childPosition - 1].parentId = type === 'add' ? structureId : /* istanbul ignore next */ '';
+    levels[levelCounter - 1].children[childPosition - 1].parentTitle = type === 'add' ? name : /* istanbul ignore next */ '';
+&nbsp;
+    this.setState({
+      levelsDetails: levels,
+    });
+  };
+&nbsp;
+  renderParents = index =&gt; {
+    const { levelsDetails, levelCounter } = this.state;
+    const level = levelsDetails[levelCounter - 1] &amp;&amp; levelsDetails[levelCounter - 1].children;
+    const parentLevels = levelsDetails[levelCounter - 2];
+    if (levelCounter != 1) {
+      return (
+        !level.length || !level[index] || !level[index].parentId
+          ? (
+            &lt;div className={this.props.missingParent ? this.props.missingParent :'select-parent'}&gt;
+              {parentLevels.children.map((parent, i) =&gt; (
+                &lt;span
+                  key={(i + 1).toString()}
+                  className="parent-list"
+                  onClick={this.toggleParentSelection(parent, index + 1, 'add')}
+                &gt;{parent.name}
+                &lt;/span&gt;
+              ))}
+            &lt;/div&gt;)
+          : (
+            &lt;div className="active-parent"&gt;
+              &lt;span&gt;{ level[index].parentTitle}&lt;/span&gt;
+              &lt;span
+                className="remove-parent"
+                onClick={this.toggleParentSelection(parent, index + 1, 'remove')}
+              &gt;x
+              &lt;/span&gt;
+            &lt;/div&gt;)
+      );
+    }
+  };
+&nbsp;
+  renderError = () =&gt; &lt;span className="error-text"&gt;This field cannot be blank&lt;/span&gt;;
+&nbsp;
+  displayLevelsInput = ({ levelCounter, levelsDetails }) =&gt; {
+    const isLevel = (levelsDetails.length &amp;&amp; levelsDetails[levelCounter - 1]) || [];
+    const { errorInput = [], quantity } = isLevel;
+&nbsp;
+    return (
+      [...Array(quantity || 0)].map((ind, index) =&gt; {
+        const error = errorInput &amp;&amp; errorInput.includes(index + 1);
+&nbsp;
+        return (
+          &lt;div className="form-input" key={index.toString()}&gt;
+            {error &amp;&amp; /* istanbul ignore next */  this.renderError()}
+            &lt;Input
+              type="text"
+              placeholder="eg. Epic Tower"
+              labelName="Level Name"
+              key={index + levelCounter}
+              id={index + 1}
+              inputClass={`level-input ${error &amp;&amp; /* istanbul ignore next */ 'error'}`}
+              name="levelName"
+              value={(isLevel.children[index] &amp;&amp; isLevel.children[index].name) || ''}
+              onChange={this.handleInputChange}
+            /&gt;
+            {this.renderParents(index)}
+          &lt;/div&gt;
+        );
+      })
+    );
+  };
+&nbsp;
+  addNewObject = () =&gt; {};
+&nbsp;
+  render() {
+    const { levelCounter, levelsDetails } = this.state;
+    const details = (levelsDetails.length &amp;&amp; levelsDetails[levelCounter - 1]) || {};
+&nbsp;
+    return (
+      &lt;form className="level-form"&gt;
+        &lt;div className="level-form__input"&gt;
+          &lt;label&gt;Set a name for this level&lt;/label&gt;
+          &lt;input
+            type="text"
+            placeholder="Building"
+            onChange={this.handleInputChange}
+            name="levelTagName"
+            value={details.tag || ''}
+            className="level-input"
+          /&gt;
+        &lt;/div&gt;
+        &lt;div className="level-form__input"&gt;
+          &lt;label&gt;How many of this level are in your location?&lt;/label&gt;
+          &lt;input
+            type="number"
+            placeholder="0"
+            onChange={this.handleInputChange}
+            name="levelQuantity"
+            value={details.quantity || ''}
+            className="level-input"
+          /&gt;
+          &lt;Controls controlsClass="num-controls" handleIncrement={this.handleInputChange} /&gt;
+        &lt;/div&gt;
+        {this.displayLevelsInput(this.state)}
+        &lt;div className="level-button-div"&gt;
+        &lt;Button handleClick={this.cancelCurrentLevelSetup} title="Back" type={2} classProp="back-button" /&gt;
+        &lt;Button handleClick={this.props.addNewLevel} title="Save" type={1} classProp="save-button" /&gt;
+        &lt;/div&gt;
+      &lt;/form&gt;
+    );
+  }
+}
+&nbsp;
+export default LevelsForm;
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Thu May 02 2019 21:44:28 GMT+0300 (East Africa Time)
+</div>
+</div>
+<script src="../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../sorter.js"></script>
+</body>
+</html>

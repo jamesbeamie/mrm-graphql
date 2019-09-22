@@ -1,0 +1,184 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Attendees Pie Chart Component renders correctly from memory 1`] = `
+<article
+  className="pie-chart"
+>
+  <section
+    className="chart-header"
+  >
+    <p
+      className="chart-title"
+    >
+      Average No. of Attendees/ Meeting
+    </p>
+    <ThemedTooltippedComponent
+      className=""
+      composeTheme="deeply"
+      mapThemrProps={[Function]}
+      theme={null}
+      tooltip="Number of attendees in a booked meeting room per meeting room"
+      tooltipDelay={0}
+      tooltipHideOnClick={true}
+      tooltipPosition="top"
+      tooltipShowOnClick={true}
+    >
+      <img
+        alt="help icon"
+        src="https://firebasestorage.googleapis.com/v0/b/learning-map-app.appspot.com/o/MrmFrontImages%2Fhelp_outline_24px.svg?alt=media&token=839e3137-c29e-463d-9a68-361e28794911"
+      />
+    </ThemedTooltippedComponent>
+  </section>
+  <section
+    className="chart-content"
+  >
+    <img
+      alt="average meeting chart"
+    />
+    <section
+      className="chart-details"
+    >
+      <p
+        className="attendees-first-circle"
+      >
+        <span />
+        130 (Yes)
+      </p>
+      <p
+        className="attendees-second-circle"
+      >
+        <span />
+        20 (Maybe)
+      </p>
+      <p
+        className="attendees-third-circle"
+      >
+        <span />
+        6 (No)
+      </p>
+    </section>
+  </section>
+</article>
+`;
+
+exports[`Attendees Pie Chart Component should be able to hover 1`] = `
+<article
+  className="pie-chart"
+>
+  <section
+    className="chart-header"
+  >
+    <p
+      className="chart-title"
+    >
+      Average No. of Attendees/ Meeting
+    </p>
+    <ThemedTooltippedComponent
+      className=""
+      composeTheme="deeply"
+      mapThemrProps={[Function]}
+      theme={null}
+      tooltip="Number of attendees in a booked meeting room per meeting room"
+      tooltipDelay={0}
+      tooltipHideOnClick={true}
+      tooltipPosition="top"
+      tooltipShowOnClick={true}
+    >
+      <img
+        alt="help icon"
+        src="https://firebasestorage.googleapis.com/v0/b/learning-map-app.appspot.com/o/MrmFrontImages%2Fhelp_outline_24px.svg?alt=media&token=839e3137-c29e-463d-9a68-361e28794911"
+      />
+    </ThemedTooltippedComponent>
+  </section>
+  <section
+    className="chart-content"
+  >
+    <img
+      alt="average meeting chart"
+    />
+    <section
+      className="chart-details"
+    >
+      <p
+        className="attendees-first-circle"
+      >
+        <span />
+        130 (Yes)
+      </p>
+      <p
+        className="attendees-second-circle"
+      >
+        <span />
+        20 (Maybe)
+      </p>
+      <p
+        className="attendees-third-circle"
+      >
+        <span />
+        6 (No)
+      </p>
+    </section>
+  </section>
+</article>
+`;
+
+exports[`Attendees Pie Chart Component should be able to hover 2`] = `
+<article
+  className="pie-chart"
+>
+  <section
+    className="chart-header"
+  >
+    <p
+      className="chart-title"
+    >
+      Average No. of Attendees/ Meeting
+    </p>
+    <ThemedTooltippedComponent
+      className=""
+      composeTheme="deeply"
+      mapThemrProps={[Function]}
+      theme={null}
+      tooltip="Number of attendees in a booked meeting room per meeting room"
+      tooltipDelay={0}
+      tooltipHideOnClick={true}
+      tooltipPosition="top"
+      tooltipShowOnClick={true}
+    >
+      <img
+        alt="help icon"
+        src="https://firebasestorage.googleapis.com/v0/b/learning-map-app.appspot.com/o/MrmFrontImages%2Fhelp_outline_24px.svg?alt=media&token=839e3137-c29e-463d-9a68-361e28794911"
+      />
+    </ThemedTooltippedComponent>
+  </section>
+  <section
+    className="chart-content"
+  >
+    <img
+      alt="average meeting chart"
+    />
+    <section
+      className="chart-details"
+    >
+      <p
+        className="attendees-first-circle"
+      >
+        <span />
+        130 (Yes)
+      </p>
+      <p
+        className="attendees-second-circle"
+      >
+        <span />
+        20 (Maybe)
+      </p>
+      <p
+        className="attendees-third-circle"
+      >
+        <span />
+        6 (No)
+      </p>
+    </section>
+  </section>
+</article>
+`;

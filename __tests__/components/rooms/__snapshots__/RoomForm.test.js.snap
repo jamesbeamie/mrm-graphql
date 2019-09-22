@@ -1,0 +1,214 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`RoomForm should render properly 1`] = `
+<RoomForm
+  formDetails={
+    Object {
+      "name": "HighLan",
+      "roomId": "1",
+    }
+  }
+  handleInputChange={[MockFunction]}
+  isLoading={false}
+  locations={
+    Array [
+      Object {
+        "__typename": "Location",
+        "id": "1",
+        "name": "Kampala",
+      },
+      Object {
+        "__typename": "Location",
+        "id": "2",
+        "name": "Lagos",
+      },
+      Object {
+        "__typename": "Location",
+        "id": "3",
+        "name": "Nairobi",
+      },
+    ]
+  }
+  onCloseModalRequest={[MockFunction]}
+  onSubmit={
+    [MockFunction] {
+      "calls": Array [
+        Array [],
+      ],
+    }
+  }
+  roomLocation=""
+>
+  <form
+    onSubmit={[Function]}
+  >
+    <Input
+      controlsClass=""
+      id="roomName"
+      inputClass="mrm-input default-input"
+      labelClass="input-wrapper"
+      labelName="Room Name"
+      name="roomName"
+      onBlur={[Function]}
+      onChange={[MockFunction]}
+      onFocus={[Function]}
+      placeholder="Enter room name"
+      required={true}
+      type="text"
+      value="text"
+    >
+      <div
+        className="input-wrapper"
+      >
+        <label
+          htmlFor="roomName"
+        >
+          Room Name
+          <input
+            className="mrm-input default-input"
+            defaultValue="text"
+            id="roomName"
+            name="roomName"
+            onBlur={[Function]}
+            onChange={[MockFunction]}
+            onFocus={[Function]}
+            placeholder="Enter room name"
+            required={true}
+            type="text"
+          />
+        </label>
+      </div>
+    </Input>
+    <SelectInput
+      disabled={true}
+      id="roomLocation"
+      isValue={false}
+      key=""
+      labelText="Select Room Location"
+      name="roomLocation"
+      onChange={[MockFunction]}
+      onClick={[Function]}
+      options={
+        Array [
+          Object {
+            "id": "1",
+            "name": "Kampala",
+          },
+          Object {
+            "id": "2",
+            "name": "Lagos",
+          },
+          Object {
+            "id": "3",
+            "name": "Nairobi",
+          },
+        ]
+      }
+      placeholder="Select room location"
+      placeholderValue=""
+      required={false}
+      selectInputClassName="default-select"
+      selected={-1}
+      value=""
+      wrapperClassName="input-wrapper"
+    >
+      <div
+        className="input-wrapper"
+      >
+        <label
+          htmlFor="roomLocation"
+        >
+          Select Room Location
+          <form
+            id="LocationFilters"
+          >
+            <select
+              className="default-select"
+              defaultValue=""
+              disabled={true}
+              id="roomLocation"
+              name="roomLocation"
+              onChange={[Function]}
+              required={false}
+              selected={-1}
+            >
+              <option
+                value=""
+              >
+                Select room location
+                 
+              </option>
+              <option
+                key="Kampala"
+                value="1"
+              >
+                Kampala
+              </option>
+              <option
+                key="Lagos"
+                value="2"
+              >
+                Lagos
+              </option>
+              <option
+                key="Nairobi"
+                value="3"
+              >
+                Nairobi
+              </option>
+            </select>
+          </form>
+        </label>
+      </div>
+    </SelectInput>
+    <ActionButtons
+      actionButtonText="SAVE CHANGES"
+      cancelButtonText="CANCEL"
+      isLoading={false}
+      onClickCancel={[MockFunction]}
+      onClickSubmit={[Function]}
+      showActionButton={true}
+      withCancel={true}
+    >
+      <div
+        className="form-action-buttons"
+      >
+        <Button
+          classProp={null}
+          handleClick={[MockFunction]}
+          isDisabled={false}
+          title="CANCEL"
+          type={1}
+        >
+          <button
+            className="null btn-primary"
+            disabled={false}
+            onClick={[MockFunction]}
+          >
+            <span>
+              CANCEL
+            </span>
+          </button>
+        </Button>
+        <Button
+          classProp="main-button"
+          handleClick={[Function]}
+          isDisabled={false}
+          title="SAVE CHANGES"
+          type={2}
+        >
+          <button
+            className="main-button btn-secondary"
+            disabled={false}
+            onClick={[Function]}
+          >
+            <span>
+              SAVE CHANGES
+            </span>
+          </button>
+        </Button>
+      </div>
+    </ActionButtons>
+  </form>
+</RoomForm>
+`;

@@ -1,0 +1,16 @@
+@import './variables';
+
+.tooltipInner {
+	background-color: map-get($color-black, 400);
+	box-shadow: 0 2px 5px 0 $color-box-shadow-tooltip;
+	color: map-get($color-white, 000);
+	border-radius: 4px;
+	font-family: $font-regular;
+	font-size: 0.8rem;
+	font-weight: lighter;
+	text-align: left;
+}
+
+.tooltip {
+	z-index: 300000;
+}

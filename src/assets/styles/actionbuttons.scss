@@ -1,0 +1,25 @@
+@import './variables';
+@import '../../utils/images/images';
+
+.form-action-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+
+  .disable-btn {
+    pointer-events: none;
+  }
+
+  .loading-div {
+    display: flex;
+  }
+
+  .loading-text {
+    padding: .05rem;
+  }
+
+  button:last-child {
+    margin-left: 4%;
+    margin-right: 0%;
+  }
+}

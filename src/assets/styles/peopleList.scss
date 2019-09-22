@@ -1,0 +1,295 @@
+@import './variables';
+@import '../../utils/images/images';
+
+.settings-people {
+  width: 95%;
+  margin: 0 auto;
+
+  .dropdown-caret{
+    margin-top: -18px !important;
+  }
+
+  .filter-options {
+    color: $color-primary;
+    padding-bottom: 12px;
+  
+    &__children {
+      padding-top: 7px;
+      margin-bottom: -10px;
+    }
+
+    &__disable {
+      padding: 4px 10px;
+      text-transform: capitalize;
+      color: map-get($color-white, 000);
+      color: $color-primary;
+    }
+  }
+
+  .action-menu {
+    display: flex;
+    flex-direction: column;
+
+    .people-header {
+      text-align: center;
+      color: map-get($color-black, 900);
+      font-size: 24px;
+      line-height: 31px;
+      margin-bottom: 10px;
+    }
+    .add-new-person {
+      width: 100%;
+      border-radius: 4px;
+      margin: 10px auto;
+      background-color: $color-resource;
+      height: 51px;
+      border: 2px dashed $color-border;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      #modal-button {
+        background-color: map-get($color-white, 000);
+        color: $color-primary;
+        border: 1px solid $color-border;
+        padding: 6px 10px;
+        height: 34px;
+        font-size: 13px;
+        border-radius: 8px;
+        box-shadow: 0 2px 10px 0 $color-shadow;
+        cursor: pointer;
+      }
+      .modal-component .modal_content {
+        overflow: scroll;
+      }
+    }
+    .sort-people {
+      align-self: flex-end;
+    }
+  }
+
+  .dropdown-caret button {
+    margin-top: 7px !important;
+    padding: 0 !important;
+    background-color: transparent !important;
+    color: $color-primary !important;
+  }
+
+  .dropdown-menu {
+    line-height: 18px;
+    padding-top: 10px;
+  }
+
+  .settings-people-list {
+    #people-list-overlay {
+      z-index: 1000;
+    }
+    .action-menu {
+      height: 70px;
+      padding-top: 4%;
+      text-align: right;
+
+      .sort-by {
+        color: map-get($color-black, 100);
+        font-family: $font-light;
+        font-size: 18px;
+        line-height: 23px;
+        display: inline;
+
+        .location {
+          height: 23px;
+          width: 70px;
+          color: $color-primary;
+          font-size: 18px;
+          font-weight: 700;
+          line-height: 23px;
+        }
+
+        .theme--button--2AgdxWh4 {
+          height: auto;
+          line-height: 10px;
+          color: transparent;
+        }
+
+        .people-sort-dropdown {
+          .theme--menu--1gvr5Gvn {
+            margin-top: 25px;
+
+            ul {
+              width: 140px;
+              border-radius: 4px;
+              background-color: map-get($color-white, 000);
+              padding: 10px 0;
+              text-align: left;
+              box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.1);
+
+              hr {
+                margin: 0;
+              }
+
+              li {
+                color: $color-primary;
+                text-align: left;
+                line-height: 27px;
+                height: auto;
+
+                &.theme--disabled--zGTpAm-p {
+                  color: map-get($color-black, 100);
+                }
+              }
+
+              span {
+                font-size: 14px;
+              }
+            }
+          }
+
+          .sort-by-caret {
+            content: url($caret-blue);
+            width: 14.4px;
+            margin-left: 6px;
+            display: inline-block;
+            vertical-align: bottom;
+          }
+        }
+
+        .caret {
+          height: 8px;
+          width: 14.4px;
+        }
+      }
+    }
+
+    .table {
+
+      &__row {
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+      &__headers {
+        grid-template-columns: repeat(3, 1fr);
+        color: map-get($color-black, 100);
+      }
+
+      &__headers:nth-child(4) {
+        padding-left: 48px;
+      }
+
+      span {
+        color: map-get($color-black, 600);
+        font-size: 95%;
+
+        .access-by-caret {
+          content: url($three-dots);
+          width: 14.4px;
+          display: inline-block;
+          vertical-align: top;
+        }
+
+        .people-access-dropdown {
+          display: inline-flex;
+          height: 15px;
+          vertical-align: middle;
+
+          &.active button {
+            border: 0.5px solid $color-border;
+            border-radius: 2px;
+          }
+
+          button {
+            height: auto;
+            margin: 0;
+            margin-left: 6px;
+          }
+
+          .theme--button--2AgdxWh4 {
+            color: transparent;
+          }
+
+          .theme--menu--1gvr5Gvn {
+            margin-top: 21px;
+
+            ul {
+              width: auto;
+              border-radius: 4px;
+              background-color: map-get($color-white, 000);
+              padding: 10px 0;
+              text-align: left;
+              box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.1);
+
+              li {
+                color: $color-primary;
+                text-align: left;
+                line-height: 27px;
+                height: auto;
+
+                &.theme--disabled--zGTpAm-p {
+                  color: map-get($color-black, 100);
+                }
+
+                &.access-menu {
+                  &:before {
+                    content: '';
+                    width: 10px;
+                  }
+
+                  &.selected:before {
+                    content: url($blue-tick);
+                  }
+                }
+              }
+
+              span {
+                margin-left: 12px;
+                font-size: 14px;
+              }
+            }
+          }
+        }
+
+        &:nth-child(4) {
+          button {
+            border: none;
+            cursor: pointer;
+            height: 13.5px;
+            width: 13.46px;
+
+            &:nth-child(1) {
+              margin-left: 25px !important;
+            }
+
+            &:nth-child(2) {
+              margin-top: 7px;
+            }
+          }
+        }
+
+        .profilePic {
+          height: 30px;
+          width: 30px;
+          vertical-align: middle;
+          border-radius: 50%;
+          margin-right: 20px;
+        }
+      }
+
+      .dropdown-caret button {
+        top: -2px !important;
+        margin-top: 0 !important;
+      }
+
+      @media screen and (max-width: 425px) {
+        width: 100%;
+        margin-right: 0;
+      }
+
+      @media screen and (min-width: 768) and (max-width: 1023px) {
+        width: 100%;
+      }
+    }
+
+    .error-class {
+      height: 40vh;
+    }
+  }
+}
+

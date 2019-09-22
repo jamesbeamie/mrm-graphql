@@ -1,0 +1,168 @@
+@import './variables';
+@import '../../utils/images/images';
+
+.analytics-cover {
+  display: flex;
+  flex-direction: row;
+  font-family: $font;
+  justify-content: space-between !important;
+  margin-top: 49.5px;
+  top: 194px;
+  vertical-align: bottom;
+
+  .btn-left {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .btn-left .btn-color {
+    background-color: $color-primary;
+  }
+  .btn-left .btn-color:hover {
+    background-color: $color-primary;
+  }
+
+  .btn-right {
+    display: flex;
+    &__location {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      &__btn {
+        margin: 0;
+        &:before {
+          content: url($location-icon);
+          margin-right: 15px;
+        }
+        &--with-caret {
+          &:after {
+            content: url($chevron-icon);
+            margin-left: 15px;
+          }
+        }
+      }
+      &__dropdown {
+        height: 0;
+        overflow: hidden;
+        position: absolute;
+        top: 2.5rem;
+        transition: height .2s ease;
+        width: 100%;
+        &--active {
+          height: 8rem;
+        }
+        &__background {
+          background: white;
+          border: 1px solid #ebebeb;
+          border-top: none;
+          // box-shadow: 0px 5px 5px #6d6d6d;
+          box-sizing: border-box;
+          display: flex;
+          flex-direction: column;
+          position: absolute;
+          width: 100%;
+          z-index: 1;
+          button {
+            border: none;
+            height: 2rem;
+          }
+          &--foreground {
+            background: transparent;
+            button {
+              background: transparent;
+              border-top: 1px solid #ebebeb;
+            }
+            z-index: 3;
+          }
+        }
+        &__text {
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          position: absolute;
+          top: 1.5rem;
+          width: 100%;
+          z-index: 2;
+          &__item {
+            color: #6d6d6d;
+            height: 2rem;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+
+
+  .dropdown-caret {
+    button {
+      height: 45px !important;
+      padding: 4px 20px !important;
+      top: 0 !important;
+    }
+  }
+
+  @media screen and (max-width: 1920px) {
+    .dropdown-menu {
+      right: 0;
+      margin-right: 6rem;
+      width: 10rem;
+      margin-top: 3rem !important;
+      border-radius: 5px;
+      margin-left: 0;
+      padding-left: 5px;
+    }
+  }
+
+  @media screen and (max-width: 1440px) {
+    .dropdown-menu {
+      right: 0;
+      margin-right: 4.5rem;
+      width: 10rem;
+      margin-top: 3rem !important;
+      border-radius: 5px;
+      margin-left: 0;
+    }
+  }
+
+  .overviewIconBtn {
+    &:before {
+      content: url($timeline-yellow);
+      margin-right: 15px;
+    }
+  }
+
+  .activityIconBtn{
+    &:before {
+      content: url($calendar-today);
+      margin-right: 15px;
+    }
+  }
+
+  .date-label {
+    margin-left: 36px;
+    width: 100%;
+    color: map-get($color-black, 100);
+    margin-bottom: 10px;
+    margin-top: 15px;
+  }
+
+  .dropbtn {
+    background-color: map-get($color-amber, 300);
+    color: map-get($color-white, 000);
+    padding:  8px 14px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    height:40px;
+    margin-top: 10px;
+
+    .dropbtn-img  #btnControl {
+      padding: 25px!important;
+    }
+  }
+
+  .btn-primary {
+    color: map-get($color-white, 000) !important;
+  }
+}

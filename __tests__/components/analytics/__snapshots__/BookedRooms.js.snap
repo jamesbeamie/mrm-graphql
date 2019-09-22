@@ -1,0 +1,80 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BookedRooms component should render correctly 1`] = `
+<div
+  className="wrap-booked-room overlay-container"
+>
+  <div
+    className="booked-room-header"
+  >
+    <img
+      alt="Pull"
+      src="https://firebasestorage.googleapis.com/v0/b/learning-map-app.appspot.com/o/MrmFrontImages%2Fpoll_red.svg?alt=media&token=f162d826-43a7-4bcb-aac8-0077ea6a4885"
+    />
+    <h4 />
+    <ThemedTooltippedComponent
+      className=""
+      composeTheme="deeply"
+      mapThemrProps={[Function]}
+      theme={null}
+      tooltip=""
+      tooltipDelay={0}
+      tooltipHideOnClick={true}
+      tooltipPosition="top"
+      tooltipShowOnClick={true}
+    >
+      <img
+        alt="help icon"
+        src="https://firebasestorage.googleapis.com/v0/b/learning-map-app.appspot.com/o/MrmFrontImages%2Fhelp_outline_24px.svg?alt=media&token=839e3137-c29e-463d-9a68-361e28794911"
+      />
+    </ThemedTooltippedComponent>
+  </div>
+  <div
+    className="booked-room-list"
+  >
+    <div
+      className="table"
+    >
+      <TableHead
+        titles={
+          Array [
+            "Room",
+            "Meetings",
+            "% Share of All Meetings",
+          ]
+        }
+      />
+      <div
+        className="table__body"
+      >
+        <div
+          className="table__row--analytics"
+          key="0"
+        >
+          <span>
+            Kampala
+          </span>
+          <span />
+          <span>
+            NaN
+            %
+          </span>
+        </div>
+        <div
+          className="table__row--analytics"
+          key="1"
+        >
+          <span>
+            Gulu
+          </span>
+          <span />
+          <span>
+            NaN
+            %
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

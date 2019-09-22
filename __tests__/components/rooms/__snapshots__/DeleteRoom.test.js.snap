@@ -1,0 +1,1280 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DeleteOffice Test Suite renders as expected 1`] = `
+<MockedProvider
+  addTypename={false}
+  mocks={
+    Array [
+      Object {
+        "error": [Error: GraphQL error: error instance],
+        "request": Object {
+          "query": undefined,
+          "variables": Object {
+            "roomId": 1,
+          },
+        },
+        "result": Object {
+          "data": Object {
+            "deletedRoom": Object {
+              "id": 1,
+              "name": "Rabat",
+            },
+          },
+        },
+      },
+    ]
+  }
+>
+  <ApolloProvider
+    client={
+      ApolloClient {
+        "__operations_cache__": Map {},
+        "cache": InMemoryCache {
+          "addTypename": false,
+          "cacheKeyRoot": KeyTrie {
+            "weakness": true,
+          },
+          "config": Object {
+            "addTypename": false,
+            "dataIdFromObject": [Function],
+            "fragmentMatcher": HeuristicFragmentMatcher {},
+            "freezeResults": false,
+            "resultCaching": true,
+          },
+          "data": DepTrackingCache {
+            "data": Object {},
+            "depend": [Function],
+          },
+          "maybeBroadcastWatch": [Function],
+          "optimisticData": DepTrackingCache {
+            "data": Object {},
+            "depend": [Function],
+          },
+          "silenceBroadcast": false,
+          "storeReader": StoreReader {
+            "executeSelectionSet": [Function],
+            "executeStoreQuery": [Function],
+            "executeSubSelectedArray": [Function],
+            "freezeResults": false,
+          },
+          "storeWriter": StoreWriter {},
+          "typenameDocumentCache": Map {},
+          "watches": Set {},
+        },
+        "clearStoreCallbacks": Array [],
+        "defaultOptions": Object {},
+        "disableNetworkFetches": false,
+        "link": MockLink {
+          "addTypename": false,
+          "mockedResponsesByKey": Object {
+            "{\\"variables\\":{\\"roomId\\":1}}": Array [
+              Object {
+                "error": [Error: GraphQL error: error instance],
+                "request": Object {
+                  "query": undefined,
+                  "variables": Object {
+                    "roomId": 1,
+                  },
+                },
+                "result": Object {
+                  "data": Object {
+                    "deletedRoom": Object {
+                      "id": 1,
+                      "name": "Rabat",
+                    },
+                  },
+                },
+              },
+            ],
+          },
+        },
+        "localState": LocalState {
+          "cache": InMemoryCache {
+            "addTypename": false,
+            "cacheKeyRoot": KeyTrie {
+              "weakness": true,
+            },
+            "config": Object {
+              "addTypename": false,
+              "dataIdFromObject": [Function],
+              "fragmentMatcher": HeuristicFragmentMatcher {},
+              "freezeResults": false,
+              "resultCaching": true,
+            },
+            "data": DepTrackingCache {
+              "data": Object {},
+              "depend": [Function],
+            },
+            "maybeBroadcastWatch": [Function],
+            "optimisticData": DepTrackingCache {
+              "data": Object {},
+              "depend": [Function],
+            },
+            "silenceBroadcast": false,
+            "storeReader": StoreReader {
+              "executeSelectionSet": [Function],
+              "executeStoreQuery": [Function],
+              "executeSubSelectedArray": [Function],
+              "freezeResults": false,
+            },
+            "storeWriter": StoreWriter {},
+            "typenameDocumentCache": Map {},
+            "watches": Set {},
+          },
+          "client": [Circular],
+        },
+        "mutate": [Function],
+        "query": [Function],
+        "queryDeduplication": true,
+        "queryManager": QueryManager {
+          "assumeImmutableResults": false,
+          "clientAwareness": Object {
+            "name": undefined,
+            "version": undefined,
+          },
+          "dataStore": DataStore {
+            "cache": InMemoryCache {
+              "addTypename": false,
+              "cacheKeyRoot": KeyTrie {
+                "weakness": true,
+              },
+              "config": Object {
+                "addTypename": false,
+                "dataIdFromObject": [Function],
+                "fragmentMatcher": HeuristicFragmentMatcher {},
+                "freezeResults": false,
+                "resultCaching": true,
+              },
+              "data": DepTrackingCache {
+                "data": Object {},
+                "depend": [Function],
+              },
+              "maybeBroadcastWatch": [Function],
+              "optimisticData": DepTrackingCache {
+                "data": Object {},
+                "depend": [Function],
+              },
+              "silenceBroadcast": false,
+              "storeReader": StoreReader {
+                "executeSelectionSet": [Function],
+                "executeStoreQuery": [Function],
+                "executeSubSelectedArray": [Function],
+                "freezeResults": false,
+              },
+              "storeWriter": StoreWriter {},
+              "typenameDocumentCache": Map {},
+              "watches": Set {},
+            },
+          },
+          "fetchQueryRejectFns": Map {},
+          "idCounter": 1,
+          "inFlightLinkObservables": Map {},
+          "link": MockLink {
+            "addTypename": false,
+            "mockedResponsesByKey": Object {
+              "{\\"variables\\":{\\"roomId\\":1}}": Array [
+                Object {
+                  "error": [Error: GraphQL error: error instance],
+                  "request": Object {
+                    "query": undefined,
+                    "variables": Object {
+                      "roomId": 1,
+                    },
+                  },
+                  "result": Object {
+                    "data": Object {
+                      "deletedRoom": Object {
+                        "id": 1,
+                        "name": "Rabat",
+                      },
+                    },
+                  },
+                },
+              ],
+            },
+          },
+          "localState": LocalState {
+            "cache": InMemoryCache {
+              "addTypename": false,
+              "cacheKeyRoot": KeyTrie {
+                "weakness": true,
+              },
+              "config": Object {
+                "addTypename": false,
+                "dataIdFromObject": [Function],
+                "fragmentMatcher": HeuristicFragmentMatcher {},
+                "freezeResults": false,
+                "resultCaching": true,
+              },
+              "data": DepTrackingCache {
+                "data": Object {},
+                "depend": [Function],
+              },
+              "maybeBroadcastWatch": [Function],
+              "optimisticData": DepTrackingCache {
+                "data": Object {},
+                "depend": [Function],
+              },
+              "silenceBroadcast": false,
+              "storeReader": StoreReader {
+                "executeSelectionSet": [Function],
+                "executeStoreQuery": [Function],
+                "executeSubSelectedArray": [Function],
+                "freezeResults": false,
+              },
+              "storeWriter": StoreWriter {},
+              "typenameDocumentCache": Map {},
+              "watches": Set {},
+            },
+            "client": [Circular],
+          },
+          "mutationStore": MutationStore {
+            "store": Object {},
+          },
+          "onBroadcast": [Function],
+          "pollingInfoByQueryId": Map {},
+          "queries": Map {},
+          "queryDeduplication": true,
+          "queryStore": QueryStore {
+            "store": Object {},
+          },
+          "ssrMode": false,
+          "transformCache": WeakMap {},
+        },
+        "reFetchObservableQueries": [Function],
+        "resetStore": [Function],
+        "resetStoreCallbacks": Array [],
+        "store": DataStore {
+          "cache": InMemoryCache {
+            "addTypename": false,
+            "cacheKeyRoot": KeyTrie {
+              "weakness": true,
+            },
+            "config": Object {
+              "addTypename": false,
+              "dataIdFromObject": [Function],
+              "fragmentMatcher": HeuristicFragmentMatcher {},
+              "freezeResults": false,
+              "resultCaching": true,
+            },
+            "data": DepTrackingCache {
+              "data": Object {},
+              "depend": [Function],
+            },
+            "maybeBroadcastWatch": [Function],
+            "optimisticData": DepTrackingCache {
+              "data": Object {},
+              "depend": [Function],
+            },
+            "silenceBroadcast": false,
+            "storeReader": StoreReader {
+              "executeSelectionSet": [Function],
+              "executeStoreQuery": [Function],
+              "executeSubSelectedArray": [Function],
+              "freezeResults": false,
+            },
+            "storeWriter": StoreWriter {},
+            "typenameDocumentCache": Map {},
+            "watches": Set {},
+          },
+        },
+        "typeDefs": undefined,
+        "version": "2.6.4",
+        "watchQuery": [Function],
+      }
+    }
+  >
+    <Apollo(DeleteRoom)
+      refetch={[MockFunction]}
+      roomId="1"
+      roomName="Rabat"
+    >
+      <Mutation
+        ignoreResults={true}
+        mutation={
+          Object {
+            "definitions": Array [
+              Object {
+                "directives": Array [],
+                "kind": "OperationDefinition",
+                "name": Object {
+                  "kind": "Name",
+                  "value": "DeleteRoom",
+                },
+                "operation": "mutation",
+                "selectionSet": Object {
+                  "kind": "SelectionSet",
+                  "selections": Array [
+                    Object {
+                      "alias": undefined,
+                      "arguments": Array [
+                        Object {
+                          "kind": "Argument",
+                          "name": Object {
+                            "kind": "Name",
+                            "value": "roomId",
+                          },
+                          "value": Object {
+                            "kind": "Variable",
+                            "name": Object {
+                              "kind": "Name",
+                              "value": "roomId",
+                            },
+                          },
+                        },
+                      ],
+                      "directives": Array [],
+                      "kind": "Field",
+                      "name": Object {
+                        "kind": "Name",
+                        "value": "deleteRoom",
+                      },
+                      "selectionSet": Object {
+                        "kind": "SelectionSet",
+                        "selections": Array [
+                          Object {
+                            "alias": undefined,
+                            "arguments": Array [],
+                            "directives": Array [],
+                            "kind": "Field",
+                            "name": Object {
+                              "kind": "Name",
+                              "value": "room",
+                            },
+                            "selectionSet": Object {
+                              "kind": "SelectionSet",
+                              "selections": Array [
+                                Object {
+                                  "alias": undefined,
+                                  "arguments": Array [],
+                                  "directives": Array [],
+                                  "kind": "Field",
+                                  "name": Object {
+                                    "kind": "Name",
+                                    "value": "id",
+                                  },
+                                  "selectionSet": undefined,
+                                },
+                                Object {
+                                  "alias": undefined,
+                                  "arguments": Array [],
+                                  "directives": Array [],
+                                  "kind": "Field",
+                                  "name": Object {
+                                    "kind": "Name",
+                                    "value": "name",
+                                  },
+                                  "selectionSet": undefined,
+                                },
+                              ],
+                            },
+                          },
+                        ],
+                      },
+                    },
+                  ],
+                },
+                "variableDefinitions": Array [
+                  Object {
+                    "defaultValue": undefined,
+                    "kind": "VariableDefinition",
+                    "type": Object {
+                      "kind": "NonNullType",
+                      "type": Object {
+                        "kind": "NamedType",
+                        "name": Object {
+                          "kind": "Name",
+                          "value": "Int",
+                        },
+                      },
+                    },
+                    "variable": Object {
+                      "kind": "Variable",
+                      "name": Object {
+                        "kind": "Name",
+                        "value": "roomId",
+                      },
+                    },
+                  },
+                ],
+              },
+            ],
+            "kind": "Document",
+            "loc": Object {
+              "end": 129,
+              "start": 0,
+            },
+          }
+        }
+        variables={
+          Object {
+            "roomId": "1",
+          }
+        }
+      >
+        <DeleteRoom
+          currentPage={1}
+          deleteRoom={[Function]}
+          refetch={[MockFunction]}
+          roomId="1"
+          roomName="Rabat"
+        >
+          <MrmModal
+            buttonText="Delete"
+            className="delete-modal"
+            closeModal={false}
+            handleCloseRequest={[Function]}
+            modalButtonClassName="button"
+            openModal={false}
+            title="DELETE ROOM"
+          >
+            <IconButtons
+              btnImage=""
+              buttonText="Delete"
+              disabled={false}
+              modalButtonClassName="button"
+              openModal={[Function]}
+            >
+              <button
+                className="button"
+                disabled={false}
+                id="modal-button"
+                onClick={[Function]}
+              >
+                <img
+                  alt="Delete"
+                  src="https://firebasestorage.googleapis.com/v0/b/learning-map-app.appspot.com/o/MrmFrontImages%2Fdelete.svg?alt=media&token=ac2828f2-841e-48bf-8c51-82ffabe54c58"
+                />
+              </button>
+            </IconButtons>
+            <Modal
+              ariaHideApp={false}
+              bodyOpenClassName="ReactModal__Body--open"
+              className="delete-modal"
+              closeTimeoutMS={0}
+              contentLabel="Parent Modal"
+              isOpen={false}
+              onAfterOpen={[Function]}
+              onRequestClose={[Function]}
+              parentSelector={[Function]}
+              portalClassName="ReactModalPortal"
+              shouldCloseOnEsc={true}
+              shouldCloseOnOverlayClick={false}
+              shouldFocusAfterRender={true}
+              shouldReturnFocusAfterClose={true}
+              style={
+                Object {
+                  "content": Object {
+                    "backgroundColor": "#ffffff",
+                    "border": "1px solid #CCCCCC",
+                    "borderRadius": "4px",
+                    "bottom": "auto",
+                    "boxShadow": "0 2px 40px 10px rgba(185, 180, 180, 0.2)",
+                    "fontFamily": "DINPro-Regular",
+                    "left": "50%",
+                    "outline": "none",
+                    "overflow": "auto",
+                    "position": "absolute",
+                    "right": "auto",
+                    "top": "50%",
+                    "transform": "translate(-50%, -50%)",
+                  },
+                }
+              }
+            >
+              <Portal
+                containerInfo={
+                  <div
+                    class="ReactModalPortal"
+                  />
+                }
+              >
+                <ModalPortal
+                  ariaHideApp={false}
+                  bodyOpenClassName="ReactModal__Body--open"
+                  className="delete-modal"
+                  closeTimeoutMS={0}
+                  contentLabel="Parent Modal"
+                  defaultStyles={
+                    Object {
+                      "content": Object {
+                        "WebkitOverflowScrolling": "touch",
+                        "background": "#fff",
+                        "border": "1px solid #ccc",
+                        "borderRadius": "4px",
+                        "bottom": "40px",
+                        "left": "40px",
+                        "outline": "none",
+                        "overflow": "auto",
+                        "padding": "20px",
+                        "position": "absolute",
+                        "right": "40px",
+                        "top": "40px",
+                      },
+                      "overlay": Object {
+                        "backgroundColor": "rgba(255, 255, 255, 0.75)",
+                        "bottom": 0,
+                        "left": 0,
+                        "position": "fixed",
+                        "right": 0,
+                        "top": 0,
+                      },
+                    }
+                  }
+                  isOpen={false}
+                  onAfterOpen={[Function]}
+                  onRequestClose={[Function]}
+                  parentSelector={[Function]}
+                  portalClassName="ReactModalPortal"
+                  shouldCloseOnEsc={true}
+                  shouldCloseOnOverlayClick={false}
+                  shouldFocusAfterRender={true}
+                  shouldReturnFocusAfterClose={true}
+                  style={
+                    Object {
+                      "content": Object {
+                        "backgroundColor": "#ffffff",
+                        "border": "1px solid #CCCCCC",
+                        "borderRadius": "4px",
+                        "bottom": "auto",
+                        "boxShadow": "0 2px 40px 10px rgba(185, 180, 180, 0.2)",
+                        "fontFamily": "DINPro-Regular",
+                        "left": "50%",
+                        "outline": "none",
+                        "overflow": "auto",
+                        "position": "absolute",
+                        "right": "auto",
+                        "top": "50%",
+                        "transform": "translate(-50%, -50%)",
+                      },
+                    }
+                  }
+                />
+              </Portal>
+            </Modal>
+          </MrmModal>
+        </DeleteRoom>
+      </Mutation>
+    </Apollo(DeleteRoom)>
+  </ApolloProvider>
+</MockedProvider>
+`;
+
+exports[`DeleteOffice Test Suite should pop up a modal when delete button is clicked 1`] = `
+<MockedProvider
+  addTypename={false}
+  mocks={
+    Array [
+      Object {
+        "error": [Error: GraphQL error: error instance],
+        "request": Object {
+          "query": undefined,
+          "variables": Object {
+            "roomId": 1,
+          },
+        },
+        "result": Object {
+          "data": Object {
+            "deletedRoom": Object {
+              "id": 1,
+              "name": "Rabat",
+            },
+          },
+        },
+      },
+    ]
+  }
+>
+  <ApolloProvider
+    client={
+      ApolloClient {
+        "__operations_cache__": Map {},
+        "cache": InMemoryCache {
+          "addTypename": false,
+          "cacheKeyRoot": KeyTrie {
+            "weakness": true,
+          },
+          "config": Object {
+            "addTypename": false,
+            "dataIdFromObject": [Function],
+            "fragmentMatcher": HeuristicFragmentMatcher {},
+            "freezeResults": false,
+            "resultCaching": true,
+          },
+          "data": DepTrackingCache {
+            "data": Object {},
+            "depend": [Function],
+          },
+          "maybeBroadcastWatch": [Function],
+          "optimisticData": DepTrackingCache {
+            "data": Object {},
+            "depend": [Function],
+          },
+          "silenceBroadcast": false,
+          "storeReader": StoreReader {
+            "executeSelectionSet": [Function],
+            "executeStoreQuery": [Function],
+            "executeSubSelectedArray": [Function],
+            "freezeResults": false,
+          },
+          "storeWriter": StoreWriter {},
+          "typenameDocumentCache": Map {},
+          "watches": Set {},
+        },
+        "clearStoreCallbacks": Array [],
+        "defaultOptions": Object {},
+        "disableNetworkFetches": false,
+        "link": MockLink {
+          "addTypename": false,
+          "mockedResponsesByKey": Object {
+            "{\\"variables\\":{\\"roomId\\":1}}": Array [
+              Object {
+                "error": [Error: GraphQL error: error instance],
+                "request": Object {
+                  "query": undefined,
+                  "variables": Object {
+                    "roomId": 1,
+                  },
+                },
+                "result": Object {
+                  "data": Object {
+                    "deletedRoom": Object {
+                      "id": 1,
+                      "name": "Rabat",
+                    },
+                  },
+                },
+              },
+            ],
+          },
+        },
+        "localState": LocalState {
+          "cache": InMemoryCache {
+            "addTypename": false,
+            "cacheKeyRoot": KeyTrie {
+              "weakness": true,
+            },
+            "config": Object {
+              "addTypename": false,
+              "dataIdFromObject": [Function],
+              "fragmentMatcher": HeuristicFragmentMatcher {},
+              "freezeResults": false,
+              "resultCaching": true,
+            },
+            "data": DepTrackingCache {
+              "data": Object {},
+              "depend": [Function],
+            },
+            "maybeBroadcastWatch": [Function],
+            "optimisticData": DepTrackingCache {
+              "data": Object {},
+              "depend": [Function],
+            },
+            "silenceBroadcast": false,
+            "storeReader": StoreReader {
+              "executeSelectionSet": [Function],
+              "executeStoreQuery": [Function],
+              "executeSubSelectedArray": [Function],
+              "freezeResults": false,
+            },
+            "storeWriter": StoreWriter {},
+            "typenameDocumentCache": Map {},
+            "watches": Set {},
+          },
+          "client": [Circular],
+        },
+        "mutate": [Function],
+        "query": [Function],
+        "queryDeduplication": true,
+        "queryManager": QueryManager {
+          "assumeImmutableResults": false,
+          "clientAwareness": Object {
+            "name": undefined,
+            "version": undefined,
+          },
+          "dataStore": DataStore {
+            "cache": InMemoryCache {
+              "addTypename": false,
+              "cacheKeyRoot": KeyTrie {
+                "weakness": true,
+              },
+              "config": Object {
+                "addTypename": false,
+                "dataIdFromObject": [Function],
+                "fragmentMatcher": HeuristicFragmentMatcher {},
+                "freezeResults": false,
+                "resultCaching": true,
+              },
+              "data": DepTrackingCache {
+                "data": Object {},
+                "depend": [Function],
+              },
+              "maybeBroadcastWatch": [Function],
+              "optimisticData": DepTrackingCache {
+                "data": Object {},
+                "depend": [Function],
+              },
+              "silenceBroadcast": false,
+              "storeReader": StoreReader {
+                "executeSelectionSet": [Function],
+                "executeStoreQuery": [Function],
+                "executeSubSelectedArray": [Function],
+                "freezeResults": false,
+              },
+              "storeWriter": StoreWriter {},
+              "typenameDocumentCache": Map {},
+              "watches": Set {},
+            },
+          },
+          "fetchQueryRejectFns": Map {},
+          "idCounter": 1,
+          "inFlightLinkObservables": Map {},
+          "link": MockLink {
+            "addTypename": false,
+            "mockedResponsesByKey": Object {
+              "{\\"variables\\":{\\"roomId\\":1}}": Array [
+                Object {
+                  "error": [Error: GraphQL error: error instance],
+                  "request": Object {
+                    "query": undefined,
+                    "variables": Object {
+                      "roomId": 1,
+                    },
+                  },
+                  "result": Object {
+                    "data": Object {
+                      "deletedRoom": Object {
+                        "id": 1,
+                        "name": "Rabat",
+                      },
+                    },
+                  },
+                },
+              ],
+            },
+          },
+          "localState": LocalState {
+            "cache": InMemoryCache {
+              "addTypename": false,
+              "cacheKeyRoot": KeyTrie {
+                "weakness": true,
+              },
+              "config": Object {
+                "addTypename": false,
+                "dataIdFromObject": [Function],
+                "fragmentMatcher": HeuristicFragmentMatcher {},
+                "freezeResults": false,
+                "resultCaching": true,
+              },
+              "data": DepTrackingCache {
+                "data": Object {},
+                "depend": [Function],
+              },
+              "maybeBroadcastWatch": [Function],
+              "optimisticData": DepTrackingCache {
+                "data": Object {},
+                "depend": [Function],
+              },
+              "silenceBroadcast": false,
+              "storeReader": StoreReader {
+                "executeSelectionSet": [Function],
+                "executeStoreQuery": [Function],
+                "executeSubSelectedArray": [Function],
+                "freezeResults": false,
+              },
+              "storeWriter": StoreWriter {},
+              "typenameDocumentCache": Map {},
+              "watches": Set {},
+            },
+            "client": [Circular],
+          },
+          "mutationStore": MutationStore {
+            "store": Object {},
+          },
+          "onBroadcast": [Function],
+          "pollingInfoByQueryId": Map {},
+          "queries": Map {},
+          "queryDeduplication": true,
+          "queryStore": QueryStore {
+            "store": Object {},
+          },
+          "ssrMode": false,
+          "transformCache": WeakMap {},
+        },
+        "reFetchObservableQueries": [Function],
+        "resetStore": [Function],
+        "resetStoreCallbacks": Array [],
+        "store": DataStore {
+          "cache": InMemoryCache {
+            "addTypename": false,
+            "cacheKeyRoot": KeyTrie {
+              "weakness": true,
+            },
+            "config": Object {
+              "addTypename": false,
+              "dataIdFromObject": [Function],
+              "fragmentMatcher": HeuristicFragmentMatcher {},
+              "freezeResults": false,
+              "resultCaching": true,
+            },
+            "data": DepTrackingCache {
+              "data": Object {},
+              "depend": [Function],
+            },
+            "maybeBroadcastWatch": [Function],
+            "optimisticData": DepTrackingCache {
+              "data": Object {},
+              "depend": [Function],
+            },
+            "silenceBroadcast": false,
+            "storeReader": StoreReader {
+              "executeSelectionSet": [Function],
+              "executeStoreQuery": [Function],
+              "executeSubSelectedArray": [Function],
+              "freezeResults": false,
+            },
+            "storeWriter": StoreWriter {},
+            "typenameDocumentCache": Map {},
+            "watches": Set {},
+          },
+        },
+        "typeDefs": undefined,
+        "version": "2.6.4",
+        "watchQuery": [Function],
+      }
+    }
+  >
+    <Apollo(DeleteRoom)
+      refetch={[MockFunction]}
+      roomId="1"
+      roomName="Rabat"
+    >
+      <Mutation
+        ignoreResults={true}
+        mutation={
+          Object {
+            "definitions": Array [
+              Object {
+                "directives": Array [],
+                "kind": "OperationDefinition",
+                "name": Object {
+                  "kind": "Name",
+                  "value": "DeleteRoom",
+                },
+                "operation": "mutation",
+                "selectionSet": Object {
+                  "kind": "SelectionSet",
+                  "selections": Array [
+                    Object {
+                      "alias": undefined,
+                      "arguments": Array [
+                        Object {
+                          "kind": "Argument",
+                          "name": Object {
+                            "kind": "Name",
+                            "value": "roomId",
+                          },
+                          "value": Object {
+                            "kind": "Variable",
+                            "name": Object {
+                              "kind": "Name",
+                              "value": "roomId",
+                            },
+                          },
+                        },
+                      ],
+                      "directives": Array [],
+                      "kind": "Field",
+                      "name": Object {
+                        "kind": "Name",
+                        "value": "deleteRoom",
+                      },
+                      "selectionSet": Object {
+                        "kind": "SelectionSet",
+                        "selections": Array [
+                          Object {
+                            "alias": undefined,
+                            "arguments": Array [],
+                            "directives": Array [],
+                            "kind": "Field",
+                            "name": Object {
+                              "kind": "Name",
+                              "value": "room",
+                            },
+                            "selectionSet": Object {
+                              "kind": "SelectionSet",
+                              "selections": Array [
+                                Object {
+                                  "alias": undefined,
+                                  "arguments": Array [],
+                                  "directives": Array [],
+                                  "kind": "Field",
+                                  "name": Object {
+                                    "kind": "Name",
+                                    "value": "id",
+                                  },
+                                  "selectionSet": undefined,
+                                },
+                                Object {
+                                  "alias": undefined,
+                                  "arguments": Array [],
+                                  "directives": Array [],
+                                  "kind": "Field",
+                                  "name": Object {
+                                    "kind": "Name",
+                                    "value": "name",
+                                  },
+                                  "selectionSet": undefined,
+                                },
+                              ],
+                            },
+                          },
+                        ],
+                      },
+                    },
+                  ],
+                },
+                "variableDefinitions": Array [
+                  Object {
+                    "defaultValue": undefined,
+                    "kind": "VariableDefinition",
+                    "type": Object {
+                      "kind": "NonNullType",
+                      "type": Object {
+                        "kind": "NamedType",
+                        "name": Object {
+                          "kind": "Name",
+                          "value": "Int",
+                        },
+                      },
+                    },
+                    "variable": Object {
+                      "kind": "Variable",
+                      "name": Object {
+                        "kind": "Name",
+                        "value": "roomId",
+                      },
+                    },
+                  },
+                ],
+              },
+            ],
+            "kind": "Document",
+            "loc": Object {
+              "end": 129,
+              "start": 0,
+            },
+          }
+        }
+        variables={
+          Object {
+            "roomId": "1",
+          }
+        }
+      >
+        <DeleteRoom
+          currentPage={1}
+          deleteRoom={[Function]}
+          refetch={[MockFunction]}
+          roomId="1"
+          roomName="Rabat"
+        >
+          <MrmModal
+            buttonText="Delete"
+            className="delete-modal"
+            closeModal={false}
+            handleCloseRequest={[Function]}
+            modalButtonClassName="button"
+            openModal={false}
+            title="DELETE ROOM"
+          >
+            <IconButtons
+              btnImage=""
+              buttonText="Delete"
+              disabled={false}
+              modalButtonClassName="button"
+              openModal={[Function]}
+            >
+              <button
+                className="button"
+                disabled={false}
+                id="modal-button"
+                onClick={[Function]}
+              >
+                <img
+                  alt="Delete"
+                  src="https://firebasestorage.googleapis.com/v0/b/learning-map-app.appspot.com/o/MrmFrontImages%2Fdelete.svg?alt=media&token=ac2828f2-841e-48bf-8c51-82ffabe54c58"
+                />
+              </button>
+            </IconButtons>
+            <Modal
+              ariaHideApp={false}
+              bodyOpenClassName="ReactModal__Body--open"
+              className="delete-modal"
+              closeTimeoutMS={0}
+              contentLabel="Parent Modal"
+              isOpen={true}
+              onAfterOpen={[Function]}
+              onRequestClose={[Function]}
+              parentSelector={[Function]}
+              portalClassName="ReactModalPortal"
+              shouldCloseOnEsc={true}
+              shouldCloseOnOverlayClick={false}
+              shouldFocusAfterRender={true}
+              shouldReturnFocusAfterClose={true}
+              style={
+                Object {
+                  "content": Object {
+                    "backgroundColor": "#ffffff",
+                    "border": "1px solid #CCCCCC",
+                    "borderRadius": "4px",
+                    "bottom": "auto",
+                    "boxShadow": "0 2px 40px 10px rgba(185, 180, 180, 0.2)",
+                    "fontFamily": "DINPro-Regular",
+                    "left": "50%",
+                    "outline": "none",
+                    "overflow": "auto",
+                    "position": "absolute",
+                    "right": "auto",
+                    "top": "50%",
+                    "transform": "translate(-50%, -50%)",
+                  },
+                }
+              }
+            >
+              <Portal
+                containerInfo={
+                  <div
+                    class="ReactModalPortal"
+                  >
+                    <div
+                      aria-modal="true"
+                      class="ReactModal__Overlay ReactModal__Overlay--after-open"
+                      style="position: fixed; top: 0px; left: 0px; right: 0px; bottom: 0px; background-color: rgba(255, 255, 255, 0.75);"
+                    >
+                      <div
+                        aria-label="Parent Modal"
+                        class="ReactModal__Content ReactModal__Content--after-open delete-modal"
+                        style="font-family: DINPro-Regular; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); border: 1px solid #cccccc; border-radius: 4px; outline: none; box-shadow: 0 2px 40px 10px rgba(185, 180, 180, 0.2); background-color: rgb(255, 255, 255); overflow: auto;"
+                        tabindex="-1"
+                      >
+                        <h2
+                          style="color: rgb(255, 0, 0);"
+                        >
+                          DELETE ROOM
+                        </h2>
+                        <div
+                          class="delete-modal-content"
+                        >
+                          <p
+                            id="confirm-msg"
+                          >
+                            Are you sure you want to delete 
+                            "Rabat"
+                            ? 
+                            <br />
+                            This cannot be undone
+                          </p>
+                          <div
+                            class="form-action-buttons"
+                          >
+                            <button
+                              class="null btn-primary"
+                            >
+                              <span>
+                                CANCEL
+                              </span>
+                            </button>
+                            <button
+                              class="main-button btn-secondary"
+                            >
+                              <span>
+                                DELETE ROOM
+                              </span>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                }
+              >
+                <ModalPortal
+                  ariaHideApp={false}
+                  bodyOpenClassName="ReactModal__Body--open"
+                  className="delete-modal"
+                  closeTimeoutMS={0}
+                  contentLabel="Parent Modal"
+                  defaultStyles={
+                    Object {
+                      "content": Object {
+                        "WebkitOverflowScrolling": "touch",
+                        "background": "#fff",
+                        "border": "1px solid #ccc",
+                        "borderRadius": "4px",
+                        "bottom": "40px",
+                        "left": "40px",
+                        "outline": "none",
+                        "overflow": "auto",
+                        "padding": "20px",
+                        "position": "absolute",
+                        "right": "40px",
+                        "top": "40px",
+                      },
+                      "overlay": Object {
+                        "backgroundColor": "rgba(255, 255, 255, 0.75)",
+                        "bottom": 0,
+                        "left": 0,
+                        "position": "fixed",
+                        "right": 0,
+                        "top": 0,
+                      },
+                    }
+                  }
+                  isOpen={true}
+                  onAfterOpen={[Function]}
+                  onRequestClose={[Function]}
+                  parentSelector={[Function]}
+                  portalClassName="ReactModalPortal"
+                  shouldCloseOnEsc={true}
+                  shouldCloseOnOverlayClick={false}
+                  shouldFocusAfterRender={true}
+                  shouldReturnFocusAfterClose={true}
+                  style={
+                    Object {
+                      "content": Object {
+                        "backgroundColor": "#ffffff",
+                        "border": "1px solid #CCCCCC",
+                        "borderRadius": "4px",
+                        "bottom": "auto",
+                        "boxShadow": "0 2px 40px 10px rgba(185, 180, 180, 0.2)",
+                        "fontFamily": "DINPro-Regular",
+                        "left": "50%",
+                        "outline": "none",
+                        "overflow": "auto",
+                        "position": "absolute",
+                        "right": "auto",
+                        "top": "50%",
+                        "transform": "translate(-50%, -50%)",
+                      },
+                    }
+                  }
+                >
+                  <div
+                    aria-modal="true"
+                    className="ReactModal__Overlay ReactModal__Overlay--after-open"
+                    onClick={[Function]}
+                    onMouseDown={[Function]}
+                    style={
+                      Object {
+                        "backgroundColor": "rgba(255, 255, 255, 0.75)",
+                        "bottom": 0,
+                        "left": 0,
+                        "position": "fixed",
+                        "right": 0,
+                        "top": 0,
+                      }
+                    }
+                  >
+                    <div
+                      aria-label="Parent Modal"
+                      className="ReactModal__Content ReactModal__Content--after-open delete-modal"
+                      onClick={[Function]}
+                      onKeyDown={[Function]}
+                      onMouseDown={[Function]}
+                      onMouseUp={[Function]}
+                      style={
+                        Object {
+                          "backgroundColor": "#ffffff",
+                          "border": "1px solid #CCCCCC",
+                          "borderRadius": "4px",
+                          "bottom": "auto",
+                          "boxShadow": "0 2px 40px 10px rgba(185, 180, 180, 0.2)",
+                          "fontFamily": "DINPro-Regular",
+                          "left": "50%",
+                          "outline": "none",
+                          "overflow": "auto",
+                          "position": "absolute",
+                          "right": "auto",
+                          "top": "50%",
+                          "transform": "translate(-50%, -50%)",
+                        }
+                      }
+                      tabIndex="-1"
+                    >
+                      <h2>
+                        DELETE ROOM
+                      </h2>
+                      <div
+                        className="delete-modal-content"
+                      >
+                        <p
+                          id="confirm-msg"
+                        >
+                          Are you sure you want to delete 
+                          "Rabat"
+                          ? 
+                          <br />
+                          This cannot be undone
+                        </p>
+                        <ActionButtons
+                          actionButtonText="DELETE ROOM"
+                          cancelButtonText="CANCEL"
+                          isLoading={false}
+                          onClickCancel={[Function]}
+                          onClickSubmit={[Function]}
+                          showActionButton={true}
+                          withCancel={true}
+                        >
+                          <div
+                            className="form-action-buttons"
+                          >
+                            <Button
+                              classProp={null}
+                              handleClick={[Function]}
+                              isDisabled={false}
+                              title="CANCEL"
+                              type={1}
+                            >
+                              <button
+                                className="null btn-primary"
+                                disabled={false}
+                                onClick={[Function]}
+                              >
+                                <span>
+                                  CANCEL
+                                </span>
+                              </button>
+                            </Button>
+                            <Button
+                              classProp="main-button"
+                              handleClick={[Function]}
+                              isDisabled={false}
+                              title="DELETE ROOM"
+                              type={2}
+                            >
+                              <button
+                                className="main-button btn-secondary"
+                                disabled={false}
+                                onClick={[Function]}
+                              >
+                                <span>
+                                  DELETE ROOM
+                                </span>
+                              </button>
+                            </Button>
+                          </div>
+                        </ActionButtons>
+                      </div>
+                    </div>
+                  </div>
+                </ModalPortal>
+              </Portal>
+            </Modal>
+          </MrmModal>
+        </DeleteRoom>
+      </Mutation>
+    </Apollo(DeleteRoom)>
+  </ApolloProvider>
+</MockedProvider>
+`;

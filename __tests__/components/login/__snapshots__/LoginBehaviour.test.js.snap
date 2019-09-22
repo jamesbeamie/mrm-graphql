@@ -1,0 +1,117 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Login component should redirect to another page when a token is present in localstorage 1`] = `
+<Login
+  history={
+    Object {
+      "push": [MockFunction] {
+        "calls": Array [
+          Array [
+            "/analytics",
+          ],
+          Array [
+            "/analytics",
+          ],
+          Array [
+            undefined,
+          ],
+        ],
+      },
+    }
+  }
+  location={
+    Object {
+      "pathname": "/",
+    }
+  }
+>
+  <header
+    className="home-header"
+  >
+    <h1>
+      CONVERGE
+    </h1>
+  </header>
+  <Component>
+    <div
+      id="converge-intro"
+    >
+      Meet the Meeting Room App
+      <br />
+      that your meeting room app aspires to be.
+    </div>
+  </Component>
+  <LoginButton>
+    <a
+      href="undefined=undefined"
+    >
+      <input
+        alt="Login With Your Email"
+        className="btn-signin"
+        src="https://firebasestorage.googleapis.com/v0/b/learning-map-app.appspot.com/o/MrmFrontImages%2FButton.png?alt=media&token=fb7692b6-1465-47c5-94f6-c94aff31c275"
+        type="image"
+      />
+    </a>
+  </LoginButton>
+  <img
+    alt="Dark Tablet"
+    id="dark-tablet"
+    src="https://firebasestorage.googleapis.com/v0/b/learning-map-app.appspot.com/o/MrmFrontImages%2FDark%20Tablet.png?alt=media&token=75ad56c4-f7f1-4322-91ce-b4850fa0eeb3"
+  />
+</Login>
+`;
+
+exports[`Login component should redirect to another page when a user successfully logs in and his token decoded 1`] = `
+<Login
+  history={
+    Object {
+      "push": [MockFunction] {
+        "calls": Array [
+          Array [
+            "/analytics",
+          ],
+        ],
+      },
+    }
+  }
+  location={
+    Object {
+      "pathname": "/",
+    }
+  }
+>
+  <header
+    className="home-header"
+  >
+    <h1>
+      CONVERGE
+    </h1>
+  </header>
+  <Component>
+    <div
+      id="converge-intro"
+    >
+      Meet the Meeting Room App
+      <br />
+      that your meeting room app aspires to be.
+    </div>
+  </Component>
+  <LoginButton>
+    <a
+      href="undefined=undefined"
+    >
+      <input
+        alt="Login With Your Email"
+        className="btn-signin"
+        src="https://firebasestorage.googleapis.com/v0/b/learning-map-app.appspot.com/o/MrmFrontImages%2FButton.png?alt=media&token=fb7692b6-1465-47c5-94f6-c94aff31c275"
+        type="image"
+      />
+    </a>
+  </LoginButton>
+  <img
+    alt="Dark Tablet"
+    id="dark-tablet"
+    src="https://firebasestorage.googleapis.com/v0/b/learning-map-app.appspot.com/o/MrmFrontImages%2FDark%20Tablet.png?alt=media&token=75ad56c4-f7f1-4322-91ce-b4850fa0eeb3"
+  />
+</Login>
+`;

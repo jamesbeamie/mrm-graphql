@@ -1,0 +1,38 @@
+@import './variables';
+
+.room-feedback-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  font-family: $font-light;
+  border-radius: 4px;
+  background-color: map-get($color-white, 000);
+  padding: 0.875em 1.875em;
+  margin-bottom: 8px;
+  color: map-get($color-black, 600);
+  border: 1px solid $color-border;
+
+  &.active {
+    background-color: $color-hover;
+  }
+
+  span:first-of-type {
+    color: $color-primary;
+  }
+
+  span img {
+    margin-right: 6px;
+  }
+
+  span.star-text {
+    margin-right: 0.938em;
+    color: map-get($color-black, 600) !important;
+  }
+  a {
+    text-decoration: none;
+    color: $color-primary;
+  }
+
+  &:hover {
+    background-color: $color-hover;
+  }
+}

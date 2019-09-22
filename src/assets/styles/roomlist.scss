@@ -1,0 +1,36 @@
+@import './variables';
+
+.settings-rooms,
+.settings-locations {
+  width: 85%;
+
+  .settings-rooms-control,
+  .settings-locations-control {
+    height: 80px;
+    text-align: right;
+    margin-top: 2%;
+
+    .button {
+      margin-right: 0;
+      margin-left: 20px;
+      cursor: pointer;
+    }
+  }
+
+  .settings-rooms-list,
+  .settings-locations-list {
+    .table {
+      &__row {
+        grid-template-columns: repeat(4, 1fr);
+      }
+
+      &__headers {
+        grid-template-columns: repeat(4, 1fr) !important;
+      }
+    }
+
+    .error-class {
+      height: 40vh;
+    }
+  }
+}

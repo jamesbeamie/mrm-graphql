@@ -1,0 +1,23 @@
+@import './variables';
+
+h2 {
+  color: $color-primary !important ;
+  display: block;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.ReactModal__Overlay {
+  background-color:  rgba(0, 0, 0, 0.5) !important;
+  z-index: 999;
+}
+
+.modalClass {
+  height: 55%;
+  width: 45%;
+}
+
+.ReactModal__Body--open {
+  overflow-y: hidden;
+  overflow-x: hidden;
+}

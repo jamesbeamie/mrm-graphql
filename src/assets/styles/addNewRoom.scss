@@ -1,0 +1,148 @@
+@import './variables';
+
+// .static-input {
+//   display: flex;
+//   justify-content: space-between;
+//   margin: 10px auto;
+//   grid-column-gap: 2%;
+//   .static-input-field {
+//     flex: 1;
+//   }
+// }
+
+.dynamic-input, .remote-room-input, .static-input {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-column-gap: 2%;
+  margin: 15px auto;
+
+  .dynamic-input-field, .static-input-field {
+    margin: 10px auto;
+    font-weight: lighter;
+  }
+}
+
+.remote-room-select {
+  margin: 10px auto;
+}
+
+.remote-room-all {
+  margin-left: 5px;
+  padding: 5px 14px;
+  height: 40px;
+  &:hover {
+    background-color: $color-primary;
+    color: map-get($color-white, 000);
+  }
+}
+
+.capacity-controls {
+  float: none;
+  top: -24px !important;
+  left: 85% !important;
+  button:first-child {
+    border: 1px solid $color-input-border;
+    &:hover {
+      border: 1px solid $color-input-border;
+    }
+  }
+}
+
+.floor-wrapper, .static-input-field {
+  label {
+    font-size: 16px;
+    font-weight: bolder;
+    &:after {
+      content: none !important;
+    }
+  }
+}
+
+[tooltip]{
+  margin-top: 32px;
+  display: inline-block;
+  width: 50px;
+  position:relative;
+  display:inline-block;
+}
+
+[tooltip]::before {
+    content: "";
+    position: absolute;
+    top:-6px;
+    left:50%;
+    transform: translateX(-50%);
+    border-width: 4px 6px 0 6px;
+    border-style: solid;
+    border-color: $color-tooltip-background transparent transparent transparent;
+    z-index: 99;
+    opacity:0;
+}
+
+[tooltip-position='top']::before{
+  left:50%;
+}
+
+[tooltip]::after {
+  content: attr(tooltip);
+  position: absolute;
+  width: 95px;
+  height: 10px;
+  left: 50%;
+  top: -6px;
+  transform: translateX(-50%) translateY(-100%);
+  background: $color-tooltip-background;
+  text-align: center;
+  color: #fff;
+  padding: 4px 4px;
+  font-size: 11px;
+  min-width: 80px;
+  border-radius: 5px;
+  pointer-events: none;
+  padding-top: 20px;
+  z-index: 99;
+  opacity: 0;
+}
+
+[tooltip-position='top']::after{
+  left:50%;
+}
+
+[tooltip]:hover::after,[tooltip]:hover::before {
+  opacity:1
+}
+
+/*
+  Screens that are 1024px wide or less
+*/
+@media screen and (max-width: 1024px) {
+  .static-input {
+    display: grid;
+    grid-template-columns: auto;
+  }
+
+  .dynamic-input {
+    grid-template-columns: auto;
+    .dynamic-input-field {
+      font-size: 15px;
+    }
+  }
+
+  .floor-wrapper, .static-input-field {
+    label {
+      font-size: 16px;
+    }
+  }
+
+  .thumbnail {
+    min-width: 200px !important;
+  }
+
+  .capacity-controls {
+    left: 87% !important;
+  }
+
+  .floor-wrapper {
+    margin-top: 5%;
+  }
+}

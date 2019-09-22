@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pagination Component renders without crashing 1`] = `
+<div
+  className="table_body"
+>
+  <Room
+    currentPage={1}
+    key="3"
+    locations={Array []}
+    refetch={null}
+    room={
+      Object {
+        "id": "3",
+        "location": "Kampala",
+        "locationId": "1",
+        "name": "Gulu",
+        "office": "The Crest",
+      }
+    }
+  />
+</div>
+`;
+
+exports[`Pagination Component renders without crashing 2`] = `
+<div
+  className="table_body"
+>
+  <Room
+    currentPage={1}
+    key="3"
+    locations={Array []}
+    refetch={null}
+    room={
+      Object {
+        "id": "3",
+        "location": "",
+        "locationId": "",
+        "name": "Gulu",
+        "office": "",
+      }
+    }
+  />
+</div>
+`;

@@ -1,0 +1,159 @@
+@import './variables.scss';
+@import '../../utils/images/images';
+
+.room-feedback-list-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  padding: 0.875em 1.875em;
+  color: map-get($color-black, 100);
+}
+
+#feedback-nav {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2.500em;
+  margin-bottom: 1.250em;
+
+  .feedback-menu-buttons {
+    display: flex;
+  }
+}
+
+.feedback-location-input {
+  font-size: 1em;
+  color: map-get($color-black, 100);
+  min-width: 30px;
+  background: url($location-icon) 90% center no-repeat;
+  background-color: map-get($color-white, 000);
+  padding: 0 1.250em;
+  border: 1px solid $color-border;
+  border-radius: 4px;
+}
+
+.feedback-filter-button {
+  display: block;
+  fill: map-get($color-amber, 300);
+  color: map-get($color-amber, 300);
+  border: 1px solid map-get($color-amber, 300);
+  border-radius: 2px;
+  background-color: map-get($color-white, 000);
+  padding: 0.650em 1.250em;
+  margin-right:  1.250em;
+
+  &:hover {
+    background-color: map-get($color-amber, 300);
+    color: map-get($color-white, 000);
+    cursor: pointer;
+  }
+
+  .svg-feedback-filter {
+    vertical-align: -3px;
+    padding-left: 10px;
+  }
+}
+
+.feedback-filter-button:hover .svg-feedback-filter {
+  fill: map-get($color-white, 000);
+}
+
+.export-button {
+  display: block;
+  color: $color-primary;
+  padding: 0.500em 1.250em;
+  border: 1px solid $color-primary;
+  border-radius: 2px;
+  background-color: map-get($color-white, 000);
+  box-shadow: 0 2px 9px 0 rgba(0, 0, 0, 0.03);
+
+  &:hover{
+    background-color: $color-primary;
+    cursor: pointer;
+    color: map-get($color-white, 000);
+  }
+
+  .svg-export {
+    fill: $color-primary;
+    padding-right: 10px;
+  }
+}
+
+.export-button:hover .svg-export{
+  fill: map-get($color-white, 000);
+}
+
+.feedback-card {
+  font-family: 'DINPro-Light';
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 1.250em;
+  color: map-get($color-black, 400);
+  margin-bottom: 40px;
+
+  section {
+    border-radius: 4px;
+    background-color: map-get($color-white, 000);
+    box-shadow: 0 2px 9px 0 rgba(0, 0, 0, 0.05);
+    padding: 1.250em;
+
+    p {
+      margin: 0;
+    }
+
+    p:last-child {
+      text-align: right;
+      color: map-get($color-black, 600);
+      font-size: 1.688em;
+      padding-top: 0.750em;
+    }
+  }
+}
+
+.dropdown-list span {
+  color: $color-primary;
+  padding: 25px 16px 5px 16px;;
+  text-decoration: none;
+  display: block;
+  height: 8px;
+  cursor: pointer;
+}
+
+.filter-options-container {
+   grid-column: 3/4;
+   justify-self: end;
+   align-self: baseline;
+}
+.container-inner {
+  display: flex;
+
+  span {
+    color: $color-header;
+  }
+}
+
+.item-list-empty {
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $color-text;
+
+  .error-class{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30px;
+    .icon-container {
+      text-align: center;
+      .error-icon{
+        font-size: 20px;
+        height: 30px;
+        width: 22px;
+      }
+    }
+    .error-msg{
+      padding-top: 7px;
+      text-align: center;
+      color: map-get($color-black, 100);
+    }
+  }
+}

@@ -1,0 +1,173 @@
+@import './variables';
+
+.add-resource-modal {
+  overflow: hidden !important;
+  width: 37%;
+  padding: 3%;
+  font-weight: 100;
+
+  &.assign-resource-modal {
+    overflow: visible !important;
+  }
+
+  .resource-filter-controls {
+    top: -20px;
+    left: 0px;
+    height: 20px;
+    float: right;
+  }
+  .add-resource-controls {
+    margin-top: 25px;
+  }
+
+  .loading-text {
+    padding-top:0.2rem;
+  }
+
+  .loading-div {
+    display: flex;
+  }
+
+  h2 {
+    margin: 1%;
+    margin-left: 0;
+  }
+
+  select {
+    margin-top: 10px;
+  }
+
+  input[type='text'] {
+    margin-top: 10px;
+  }
+
+  form.device-type {
+    .device-input {
+      margin-bottom: 2rem;
+      margin-top: 2rem;
+    }
+  }
+
+  input[type='number'] {
+    margin-top: 10px;
+    border-radius: 4px 0 0 4px;
+  }
+
+  .room-wrapper {
+    margin-top: 25px;
+  }
+
+  .amenity-form {
+    font-size: 105%;
+    input {
+      border-radius: 5px;
+      right: 3%;
+      padding: 10px;
+      width: 100%;
+      border: 0.5px solid $color-input-border;
+      font-size: 95%;
+      box-sizing: border-box;
+      height: auto;
+      @media screen and (max-width: 639px) {
+        width: 91%;
+      }
+    }
+
+    button {
+      cursor: pointer;
+      bottom: 4%;
+      right: 4%;
+      padding: 2% 1.5%;
+      @media screen and (min-width: 640px) and (max-width: 1023px) and (orientation: landscape) {
+        right: 0%;
+      }
+      @media screen and (min-width: 1024) and (orientation: landscape) {
+        right: 1.75%;
+      }
+      @media screen and (min-width: 768px) and (orientation: portrait) {
+        right: 1.5%;
+      }
+    }
+
+    .form-action-buttons {
+      button:first-child, button:first-child:hover{
+        background-color: map-get($color-white,000);
+        border: 1px solid $color-primary;
+        color: $color-primary;
+      }
+
+      button:nth-child(2) , button:nth-child(2):hover {
+        background-color: map-get($color-blue, 400) !important;
+        border: 1px solid map-get($color-blue, 400);
+        color: map-get($color-white, 000);
+      }
+
+    }
+
+    .loading-btn-div {
+      margin-top: 1rem;
+    }
+
+    .button-container {
+      position: absolute;
+      width: 100%;
+      right: 0;
+      margin-bottom: 30px;
+      margin-top: 30px;
+
+      .add-resource {
+        text-transform: uppercase;
+        background-color: $color-primary;
+        height: 44px;
+        float: right;
+        margin-right: 7%;
+        @media screen and (max-width: 867px) {
+          margin-right: 5%;
+        }
+      }
+
+      .modal-cancel {
+        color: $color-primary;
+        border: 1px solid $color-primary;
+        background-color: map-get($color-white, 000);
+        text-transform: uppercase;
+        height: 44px;
+        float: right;
+        width: 137px;
+        margin-right: 5%;
+      }
+
+      .modal-cancel:hover {
+        background-color: $color-primary;
+        color: map-get($color-white, 000);
+      }
+    }
+  }
+
+  @media screen and (max-width: 639px) {
+    width: 78%;
+
+    input[type='text'] {
+      min-width: 29.3em;
+    }
+  }
+
+  @media screen and (min-width: 640px) and (max-width: 1023px) and (orientation: landscape) {
+    max-height: 68%;
+    width: 60%;
+  }
+
+  @media screen and (min-width: 768px) and (orientation: portrait) {
+    width: 52.5%;
+  }
+
+  @media screen and (min-width: 1024) and (orientation: landscape) {
+    width: 49%;
+    height: 33.5%;
+  }
+
+  .room-input {
+    width: 100% !important;
+  }
+}
+

@@ -1,0 +1,60 @@
+@import './variables';
+
+.overlay {
+  position: absolute;
+  background: $transparent-background;
+  opacity: .5;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay-container {
+  position: relative;
+  .overlay {
+    left: 0;
+    top: 0;
+    z-index: 1;
+  }
+  .Pagination-spinner {
+    height: auto;
+    .centered {
+      align-items: center;
+      display: flex;
+      height: 100%;
+      justify-content: center;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 100%;
+      z-index: 2000;
+      .spinner {
+        margin: 0;
+      }
+    }
+  }
+}
+
+.Pagination-spinner {
+  height:25px;
+}
+
+.settings-offices-list,
+.average-meeting-list,
+.settings-rooms-list,
+.settings-resource-list,
+.settings-people-list,
+.average-meeting-list,
+.feedback-reponses-list {
+  position: relative;
+}
+
+#average-meeting {
+  left: 0%;
+}
+
+.disabled-buttons {
+  pointer-events: none !important;
+}

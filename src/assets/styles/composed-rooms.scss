@@ -1,0 +1,11 @@
+.wrap-composed-rooms {
+  display: flex;
+
+  .query-booked-rooms {
+    flex: 1;
+  }
+}
+
+#booked-room-margin {
+  margin-left: 30px;
+}

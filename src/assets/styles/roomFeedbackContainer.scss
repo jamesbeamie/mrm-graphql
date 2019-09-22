@@ -1,0 +1,252 @@
+@import './variables.scss';
+@import '../../utils/images/images';
+
+.roomfeedback-container {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 2%;
+
+  #modal-button.modal-trigger {
+    color: map-get($color-blue, 400);
+    border: 1px solid map-get($color-blue, 400);
+  }
+  .calendar-container {
+    position: relative;
+
+    button {
+      &.calendarIconBtn.btn-secondary:before {
+        margin: 12px 10px -5px 12px;
+      }
+
+      > span {
+        position: relative;
+        top: 12px;
+      }
+    }
+
+    .calendar {
+      position: absolute;
+      margin-top: -22px;
+      z-index: 2;
+      right: auto;
+
+      .date_di {
+        display: grid;
+
+        > div {
+          display: grid;
+
+          .date_nav {
+            grid-column: 1;
+            &.number_of_days {
+              grid-column: 2;
+              padding: 6px 12px !important;
+              border-radius: 6px;
+              margin: 0;
+              width: max-content;
+              height: min-content;
+              place-self: center start;
+
+              > span {
+                padding: 0;
+                width: max-content;
+              }
+            }
+          }
+        }
+      }
+
+      .DayPicker-Months {
+        flex-wrap: unset !important;
+      }
+
+      .DayPicker-Month {
+        margin: 0 0.3em !important;
+      }
+    }
+
+    .calendar__button {
+      .cancel_button {
+        padding: 15px 14px 5px !important;
+        font-family: "DINPro" !important;
+        color: map-get($color-black, 900) !important;
+      }
+      .apply_button {
+        padding: 12px 20px !important;
+        border-radius: 0;
+        margin-left: -3px;
+      }
+
+      .apply_button, .cancel_button {
+        font-size: 13px !important;
+        border: none;
+        text-transform: capitalize;
+      }
+    }
+
+    #calendar-btn {
+      height: 40px;
+      display: flex;
+      border: 1px solid $color-input-border;
+      border-radius: 5px;
+      margin: 30px 0;
+      width: 100%;
+      right: 0%;
+      color: $color-text;
+    }
+
+    .calendarIconBtn {
+       margin: 23px 0;
+    }
+
+    .calendarIconBtn-error {
+      border: 1px solid $color-danger;
+      margin-left: 0;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+  }
+
+  .question-form {
+    line-height: unset;
+
+    & .calendar-container > button > span {
+      font-family: 'DINPro';
+      margin-right: 10px;
+    }
+
+    .btn-secondary {
+      line-height: 2 !important;
+    }
+  }
+
+  &__control {
+    display: flex;
+    padding: 10px 0;
+    margin-bottom: 70px;
+  }
+
+  .tab-navigator {
+    margin-right: auto;
+    display: flex;
+
+    .btn-secondary {
+      color: map-get($color-black, 500);
+    }
+
+    .btn-primary {
+      color: map-get($color-white, 000);
+      font-family: "DINPro";
+    }
+    button {
+      line-height: 1.2em !important;
+    }
+  }
+
+  .responses-tab-nav, .questions-tab-nav {
+    display: flex;
+    &:before {
+      content: url($response-icon);
+    }
+    span {
+      margin: 10px 0 0 10px;
+    }
+  }
+
+  .questions-tab-nav {
+    &:before {
+      content: url($question-icon);
+    }
+  }
+
+  .feedback-filter-button {
+    display: flex;
+
+    &:after {
+      content: url($filter-yellow);
+      margin-left: 7px;
+    }
+    span {
+      margin: 13px 0 0 10px;
+    }
+  }
+
+  .dropdown-caret {
+    button {
+      height: 45px !important;
+      padding: 4px 20px !important;
+      top: 0 !important;
+    }
+  }
+
+  .dropdown-menu {
+    right: 0;
+    margin-right: 4.5rem;
+    width: 7rem;
+    margin-top: 3rem !important;
+  }
+
+  .response-feedback-container {
+    &__items {
+      display: flex;
+      .response-filter-button {
+        margin-left: 0;
+      }
+    }
+
+    &__modal {
+      position: relative;
+      &__content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        box-shadow: 0 16px 32px 0 rgba(0, 0, 0, 0.12);
+        border-radius: 5px;
+        top: 0;
+        left: 0;
+        background: white;
+        height: 0;
+        overflow: hidden;
+        width: 100%;
+        transition: height 0.2s;
+        z-index: 10;
+        > div {
+          margin: 0 auto;
+          width: 80%;
+          > *, p {
+            margin-bottom: 2rem;
+
+            &.filter-by-room {
+              margin-bottom: 3rem;
+            }
+
+            .input-range {
+              width: 95%;
+              margin: 0 auto;
+            }
+          }
+          .action-buttons {
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 3rem;
+          }
+          .input1 {
+            width: 100%;
+          }
+        }
+        &.active {
+          height: 20rem;
+        }
+      }
+    }
+
+    .response-filter-button {
+      img {
+        position: relative;
+        right: 5px;
+        top: 2px;
+      }
+    }
+  }
+}

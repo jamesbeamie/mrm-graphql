@@ -1,0 +1,144 @@
+@import './variables';
+@import '../../utils/images/images';
+
+.average-meeting {
+  background: map-get($color-white, 000);
+  margin: 30px 0 60px;
+  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  padding-top: 10px;
+
+  .average-meeting-control {
+    border-bottom: 1px solid map-get($color-white, 500);
+    height: 66px;
+
+    .header-title {
+      margin: 0;
+      padding: 26px 32px 19px;
+      color: map-get($color-black, 600);
+      font-size: 16px;
+      float: left;
+
+      &:before {
+        content: url($timer-blue);
+        display: inline-block;
+        vertical-align: middle;
+        line-height: normal;
+        padding-right: 10px;
+      }
+    }
+
+    .moreVerticalIcon {
+      float: right;
+      padding: 26px 32px 19px;
+      color: map-get($color-black, 600);
+      font-size: 16px;
+    }
+  }
+
+  .average-meeting-list {
+    padding: 0 32px;
+      table {
+        width: 100% !important;
+      }
+
+      .table {
+        padding-top: 10px;
+
+        &__row--analytics {
+          display: grid;
+          padding: 0.275em 1.75em;
+          font-size: 15px !important;
+          grid-template-columns: repeat(3, 1fr);
+          border-top: 1px solid map-get($color-white, 500) !important;
+
+          span {
+            padding: 20px 0;
+          }
+
+          span:nth-child(2n) {
+            margin-left: 20px;
+          }
+        }
+
+        &__row--loading {
+          display: grid;
+          padding: 0.275em 1.75em;
+          font-size: 15px !important;
+        }
+
+        &__headers {
+          grid-template-columns: repeat(3, 1fr) !important;
+          margin-top: 20px;
+
+          span {
+            font-weight: 900;
+          }
+        }
+      }
+    }
+
+
+  .average-meeting-pagination {
+    border-top: 1px solid map-get($color-white, 500);
+    padding: 0 32px;
+
+    .perPageBlock {
+      display: none;
+    }
+
+    .showingBlock {
+      width: 100%;
+
+      .pagination {
+        justify-content: space-between;
+
+        .pageNum.reverse {
+          color: map-get($color-black, 100);
+          ;
+          padding: 0;
+          margin-left: 0;
+        }
+
+        li {
+          padding: 0;
+          margin: 0;
+        }
+
+        .results {
+          display: flex;
+        }
+      }
+    }
+  }
+}
+
+.average-table-error {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 30px;
+  text-align: center;
+  padding-bottom: 10px;
+
+  .error_icon{
+    font-size: 20px;
+  }
+
+  .error-500-icon {
+    height: 30px;
+    width: 22px;
+  }
+
+  .error_msg{
+    padding-top: 7px;
+    text-align: center;
+    color: map-get($color-black, 100);
+  }
+}
+
+#average-meeting + .Pagination-spinner > .centered > .spinner {
+  margin: auto;
+  position: relative;
+  top: 8em;
+}

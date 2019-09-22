@@ -1,0 +1,26 @@
+@import './variables';
+
+.settings-devices-list {
+
+  width: 95%;
+  margin: auto;
+
+  .table {
+    &__row {
+      grid-template-columns: repeat(6, 1fr);
+    }
+
+    &__headers {
+      grid-template-columns: repeat(6, 1fr) !important;
+    }
+
+    @media screen and (max-width: 425px) {
+      width: 100%;
+      margin-right: 0;
+    }
+
+    @media screen and (min-width: 768) and (max-width: 1023px) {
+      width: 100%;
+    }
+  }
+}

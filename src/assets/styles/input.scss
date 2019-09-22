@@ -1,0 +1,81 @@
+@import './variables';
+
+.mrm-input {
+  display: block;
+  border-radius: 4px;
+  padding: 10px;
+  width: auto;
+  height: 1.49em;
+  font-family: $font-regular;
+  font-size: 16px;
+  color: map-get($color-black, 900) !important;
+  border: 1px solid $color-input-border;
+  margin-top: 10px;
+  ::placeholder {
+    color: map-get($color-black, 900) !important;
+    opacity: 1;
+  }
+  &-rm {
+    width: 99%;
+  }
+  &-rc {
+    width: 87%;
+    margin-left: 5%
+  }
+}
+
+.controls{
+  box-sizing: border-box;
+  position: relative;
+  float: right;
+  top: -2.17rem;
+  left: -.1rem;
+  z-index: 1;
+}
+
+.kla-controls{
+  top: -3.37rem;
+  left: -.25rem;
+}
+.control{
+  background-color: map-get($color-white, 000);
+  box-sizing: border-box;
+  position: absolute;
+  height : 1.5rem;
+  width: 3.2rem;
+  text-align:center;
+  user-select: none;
+  border: 1px solid $color-input-border;
+}
+.up {
+  transform: rotate(180deg);
+  border-radius: 0 0 0 4px;
+  top: -1.4rem;
+}
+.down{
+  border-radius: 0 0 4px 0;
+}
+input[type=number]
+{
+  border-radius: 4px 0 0 4px;
+  &::-webkit-inner-spin-button,
+  &::-webkit-outer-spin-button{
+      -webkit-appearance: none;
+      opacity: 1;
+      margin: 0;
+  }
+}
+
+/*
+  Screens that are 1024px wide or less
+*/
+@media screen and (max-width: 1024px) {
+  .mrm-input-rm {
+    width: 94%;
+  }
+
+  .mrm-input-rc {
+    width: 94%;
+    margin-left: 0
+  }
+}

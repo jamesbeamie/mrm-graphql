@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Preference Component should render properly 1`] = `
+<Fragment>
+  <withRouter(TopMenuComponent) />
+  <div
+    className="preference-container"
+  >
+    <BackArrow
+      redirectUri="/analytics"
+    />
+    <NotificationSettingsList />
+  </div>
+</Fragment>
+`;

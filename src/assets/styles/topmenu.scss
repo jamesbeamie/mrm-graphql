@@ -1,0 +1,406 @@
+@import './variables';
+
+.top-menu::after {
+  content: "";
+  display: block;
+  width: 98%;
+  min-width: 600px;
+  height: 1px;
+  margin: auto;
+  background: map-get($color-white, 500);
+  color: map-get($color-white, 000);
+}
+
+.location-dropdown {
+  margin: 0px 50px 0px 10px;
+}
+
+.nav-menu {
+  background: map-get($color-white, 000);
+  box-shadow: none !important;
+  margin-left: 0px;
+  margin-right: 0px;
+  height: 68px !important;
+
+
+  .search-box__input-field {
+    border: 1px solid rgba(0,0,0,0.12);
+    display: flex;
+    border-radius: 17px;
+    height: 2rem;
+    position: relative;
+    justify-content: flex-end;
+    top: 0.25rem;
+    min-width: 224px;
+    &:focus {
+      border-color: rgba(0, 0, 0, 0.2);
+      outline: none;
+    }
+    input {
+      border: none;
+      margin: 0;
+      padding: 0;
+      padding-left: 1rem;
+      padding-top: 4px;
+      background: transparent;
+    }
+    button {
+      height: auto;
+      padding: 0;
+      border: none;
+      color: #999;
+      background: transparent;
+      padding-top: 0.75rem;
+      padding-left: 0.75rem;
+    }
+  }
+
+  .input-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 4rem;
+    position: relative;
+  }
+
+  a {
+    text-decoration: none;
+  }
+}
+
+.preference-dropdown-list {
+  position: absolute;
+  background: map-get($color-white, 000);
+  text-align: left;
+  padding: 0px 0;
+  margin-top: 0.5rem !important;
+  margin-left: -1.7rem;
+  border-radius: 2px;
+  box-shadow: 0px 2px 6px map-get($color-white, 700);
+  color: $color-primary;
+  z-index: 99;
+}
+
+.preference-dropdown-list span {
+  color: $text-color !important;
+  display: inline-block;
+  height: 50px;
+  cursor: pointer;
+}
+
+.preference-link {
+  font-family: $font-light !important;
+  display: inline-flex;
+  padding: 0px 12px 0px 0px;
+}
+
+.preference-div {
+  padding: 20px 2px 0px 0px;
+}
+
+.preference-dropdown-list li {
+  color: $text-color;
+  font-family: $font-light !important;
+  padding: 0px 17px 18px 10px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.preference-dropdown-list li:hover {
+  color:$color-primary !important;
+  cursor: pointer;
+}
+
+.preference-icon {
+  width: 1.5rem;
+}
+
+.logout-btn {
+  display: inline-flex;
+  justify-content: center;
+  letter-spacing: 0.3px;
+  padding: 5px;
+  width: 8rem;
+  margin: 10px;
+  font-family: $font-light !important;
+  cursor: pointer;
+  border: 1px solid $color-primary;
+  border-radius: 5px;
+  font-size: 1rem;
+  color: map-get($color-white, 000);
+  background-color: $color-primary;
+  opacity: 1;
+}
+
+.logout-btn:hover {
+  opacity: 0.8;
+}
+
+.preference-div:hover {
+  color:$color-primary !important;
+  cursor: pointer;
+}
+
+.preference-border {
+  border-top: 1px solid $color-text;
+  opacity: 0.3;
+  height: 1px;
+}
+
+.nav-menu nav {
+  position: absolute;
+  right: 0;
+}
+
+.nav-right {
+  width: 77%;
+  min-width: 400px;
+}
+
+.nav-left {
+  width: 20%;
+  min-width: 200px;
+}
+
+.nav-menu button.theme--button--2AgdxWh4 {
+  height: 32px;
+  width: 32px;
+}
+
+.nav-brand {
+  height: 68px;
+  margin: 0;
+  -webkit-padding-start: 60px;
+}
+
+.search-icon {
+  cursor: pointer;
+  position: static;
+  padding-right: 0.75rem;
+}
+
+.logo {
+  position: absolute;
+  height: 68px;
+  vertical-align: middle;
+  line-height: 68px;
+}
+
+.logo img {
+  vertical-align: middle;
+}
+
+.search-box__input-field a img {
+  margin-top: 25%;
+}
+
+.logo-text {
+  position: absolute;
+  top: 0;
+  height: 68px;
+  line-height: 68px;
+  margin-left: 44px;
+}
+
+.logo-text h1 {
+  color: $color-primary;
+  font-family: $font, sans-serif;
+  letter-spacing: 2px;
+  vertical-align: middle;
+  margin: 0;
+  font-size: 120%;
+  padding-top: 3%;
+}
+
+.search-box {
+  position: relative;
+  height: 100%;
+  .search-link-options {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    height: 6.5rem;
+    width: 7rem;
+    position: absolute;
+    top: 4.5rem;
+    left: 2rem;
+    z-index: 999;
+    &__option {
+      color: #6d6d6d;
+      font-size: 0.9rem;
+      text-align: center;
+      &:first-child {
+        padding-left: none;
+      }
+    }
+    &__shape, &__background {
+      display: grid;
+      grid-template-rows: 1fr 1fr 1fr;
+      height: 6.5rem;
+      box-shadow: 0 16px 32px 0 rgba(0,0,0,0.12);
+      border-radius: 5px;
+      position: absolute;
+      width: 7rem;
+      top: 3.2rem;
+      left: 2rem;
+      z-index: 1000;
+      button {
+        background: transparent;
+        border: none;
+        height: auto;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+        &:last-child {
+          border-bottom: none;
+        }
+      }
+    }
+    &__background {
+      z-index: 998;
+      background: white;
+    }
+  }
+}
+
+.search-box form {
+  line-height: 68px;
+}
+
+.search-bar {
+  border-radius: 17px;
+  width: 224px;
+  height: 32px;
+  padding-left: 1em;
+  font-size: 100%;
+  vertical-align: middle;
+  border: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+.search-bar:focus {
+  border-color: rgba(0, 0, 0, 0.2);
+}
+
+.input-append:focus,
+.search-bar:focus {
+  outline: 0;
+}
+
+.notifications {
+  width: 84px !important;
+  text-align: center;
+}
+
+.profile {
+  margin-top: 3px;
+  width: 34px !important;
+}
+
+.username {
+  font-family: $font-light;
+  font-size: 105%;
+  color: $color-text;
+  padding-left: 0.5em;
+}
+
+.profile-name {
+  margin-top: 0.5rem;
+  display: flex;
+}
+
+.profile-dropdown {
+  vertical-align: middle;
+  margin-top: 1px;
+  padding-left: 0px;
+
+  a{
+    text-decoration:none
+  }
+
+  .material-icons {
+    font-size: 2em;
+    color: $color-text;
+  }
+
+  button {
+    span {
+      line-height: normal !important;
+      vertical-align: top !important;
+    }
+  }
+
+  .theme--menu--1gvr5Gvn {
+    margin-top: 35px;
+    margin-right: 10px;
+
+    ul {
+      border-radius: 4px;
+      background-color: map-get($color-white, 000);
+      padding: 0;
+      text-align: center;
+      box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.1);
+
+      li {
+        color: map-get($color-black, 100);
+        text-align: center;
+      }
+
+      &:hover {
+        background-color: map-get($color-white, 200);
+      }
+
+      span {
+        font-size: 18px;
+        line-height: 20px;
+        padding: 10px 0;
+      }
+    }
+  }
+}
+
+.topmenu-right {
+  position: absolute !important;
+  width: 37% !important;
+  right: 0;
+}
+
+@media only screen and (max-width: 798px) {
+  .username {
+    display: none;
+  }
+
+  .dropdown {
+    padding-left: unset;
+  }
+
+  .nav-brand {
+    -webkit-padding-start: 20px;
+  }
+}
+
+.profile-menu{
+  list-style: none;
+}
+
+.menu-icon {
+  height: 34px;
+  width: 34px;
+  border-radius: 17px;
+}
+
+.dropdown-menu {
+  min-width: min-content;
+  margin-top: 10px !important;
+}
+
+.dropdown-caret {
+  button {
+    position: relative;
+    top: -8px;
+    color: $text-color !important;
+    padding: 0 !important;
+    background-color: none !important ;
+    height: 0 !important;
+    font-size: 1.5rem !important;
+    border: 0 solid  !important;
+    cursor: pointer;
+    margin-left: 0.3rem;
+  }
+}

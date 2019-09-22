@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`QueryAnalyticsPerMeetingRoom component renders correctly 1`] = `
+<div
+  className="table__row--analytics"
+  key="1"
+>
+  <span>
+    Malabo
+  </span>
+  <span>
+    63
+  </span>
+  <span>
+    1 Hour 9 Minutes
+  </span>
+</div>
+`;

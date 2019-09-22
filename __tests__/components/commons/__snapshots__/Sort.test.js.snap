@@ -1,0 +1,58 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Sort Component should render component without errors 1`] = `
+<Sort
+  fetchSortedData={[MockFunction]}
+  hideDropdownMenu={false}
+  sortOptions={
+    Object {
+      "role": Array [
+        Object {
+          "id": "1",
+          "name": "admin",
+        },
+        Object {
+          "id": "2",
+          "name": "user",
+        },
+      ],
+    }
+  }
+  withChildren={true}
+>
+  <div
+    className="filter-options-container"
+  >
+    <div
+      className="container-inner"
+    >
+      <span>
+        Sort by:
+      </span>
+      <Dropdown
+        content={
+          Array [
+            <span
+              className="filter-options"
+              onClick={[Function]}
+            >
+              role
+            </span>,
+          ]
+        }
+        icon="⇵"
+      >
+        <div
+          className="dropdown-caret"
+        >
+          <button
+            onMouseDown={[Function]}
+          >
+            ⇵
+          </button>
+        </div>
+      </Dropdown>
+    </div>
+  </div>
+</Sort>
+`;

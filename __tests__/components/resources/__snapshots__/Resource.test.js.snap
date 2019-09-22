@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tests for Resource Component renders correctly from memory 1`] = `
+<div
+  className="table__row"
+>
+  <span>
+    Marker
+  </span>
+  <span>
+    <Apollo(Apollo(EditResource))
+      currentPage={1}
+      refetch={null}
+      resource={
+        Object {
+          "name": "Marker",
+          "rooms": 4,
+        }
+      }
+    />
+      
+    <Apollo(Apollo(DeleteResource))
+      currentPage={1}
+      refetch={null}
+      toDelete={
+        Object {
+          "name": "Marker",
+          "rooms": 4,
+        }
+      }
+    />
+  </span>
+</div>
+`;

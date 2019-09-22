@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NotificationSetting Component renders correctly from memory 1`] = `
+<div
+  className="notification-container"
+>
+  <section
+    className="notification-content"
+  >
+    <h2
+      className="notification-title"
+    >
+      Meeting Notifications
+    </h2>
+    <p>
+      some
+    </p>
+  </section>
+  <section
+    className="notification-switch"
+  >
+    <ThemedSwitch
+      checked={false}
+      className="switch-component"
+      composeTheme="deeply"
+      disabled={false}
+      id="switchBtn"
+      mapThemrProps={[Function]}
+      onChange={[Function]}
+    />
+  </section>
+</div>
+`;

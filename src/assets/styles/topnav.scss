@@ -1,0 +1,101 @@
+@import './variables';
+
+.top-nav {
+  position: relative;
+  min-width: 600px;
+  background: map-get($color-white, 000);
+  margin: 0;
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0), 0 1px 10px 0 rgba(0, 0, 0, 0),
+      0 2px 4px -1px rgba(0, 0, 0, 0.22) !important;
+  text-align: center;
+  height: 65px;
+}
+
+.top-nav ul {
+  padding: 0;
+  list-style: none;
+}
+
+.top-nav ul a{
+ text-decoration: none;
+}
+.nav-app-bar nav a {
+  height: 100%;
+  margin: 0 1em !important;
+  margin-top: 1.01px !important;
+  font-family: $font-regular;
+  line-height: 60px;
+  }
+
+  .top-nav ul span {
+    margin-right: 8px;
+  }
+
+  .converge-menu {
+    display: flex;
+  }
+
+  .converge-menu {
+    height: 60px;
+    align-items: center;
+    padding: 0 15px;
+    margin: 0;
+    justify-content: center;
+  }
+
+  .converge-menu li a {
+    padding: 17px 10px 0 10px;
+    height: 45px;
+    cursor: pointer;
+    padding-top: 17px;
+    font-weight: 900;
+    color: $color-text;
+  }
+
+  .converge-menu li {
+    margin-right: 19px;
+    height: 60px;
+  }
+
+  .converge-link {
+    display: inline-block;
+    color: map-get($color-black, 900);
+    text-decoration: none;
+  }
+
+  .item-name {
+    vertical-align: middle;
+  }
+
+  .converge-menu li::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 3px;
+    background: $color-primary !important;
+    transition: width .3s;
+  }
+
+  .converge-menu li:hover::after {
+    width: 100%;
+  }
+
+  .converge-menu li.active::after {
+    width: 100%;
+  }
+
+  .converge-menu li.active a {
+    color: $color-primary !important;
+    .svg-nav {
+      filter: invert(0.53) sepia(1) saturate(142) hue-rotate(218deg);
+    }
+  }
+
+  .converge-menu li:hover a {
+    color: $color-primary !important;
+    .svg-nav {
+      filter: invert(0.53) sepia(1) saturate(142) hue-rotate(218deg);
+    }
+  }
+
+
